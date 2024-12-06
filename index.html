@@ -3,34 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Shine Remollo</title>
+    <title>Shine Remollo - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="profile">
+    <header class="hero">
+        <div class="hero-content">
             <img src="profile_image_circular.png" alt="Profilbild" class="profile-image">
             <h1>Shine Remollo</h1>
             <p>Ausbildung als Fachinformatikerin | Leidenschaft für Technologie und Nachhaltigkeit</p>
         </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">Über Mich</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section id="about">
+        <section id="about" class="container">
             <h2>Über Mich</h2>
             <p>Hallo! Mein Name ist Shine Remollo, ich bin 19 Jahre alt und komme aus den Philippinen. Mit einer starken Leidenschaft für Technologie und Innovation strebe ich danach, meine Fähigkeiten kontinuierlich weiterzuentwickeln und zur Lösung moderner Herausforderungen beizutragen.</p>
             <p>Ich bringe eine vielseitige Palette an Kompetenzen mit, darunter:</p>
-            <ul>
-                <li>Webentwicklung mit HTML, CSS und JavaScript</li>
-                <li>Integration von APIs und Erstellung interaktiver Benutzeroberflächen</li>
-                <li>Datenvisualisierung und nachhaltige Technologie-Konzepte</li>
-                <li>Grundkenntnisse im IoT und in der Energietechnologie</li>
+            <ul class="skills-list">
+                <li><i class="fa-solid fa-code"></i> Webentwicklung mit HTML, CSS und JavaScript</li>
+                <li><i class="fa-solid fa-database"></i> API-Integration und interaktive Benutzeroberflächen</li>
+                <li><i class="fa-solid fa-chart-bar"></i> Datenvisualisierung und nachhaltige Technologie-Konzepte</li>
+                <li><i class="fa-solid fa-lightbulb"></i> Grundkenntnisse in IoT und Energieeffizienz</li>
             </ul>
-            <p>Als ehrgeizige Nachwuchsinformatikerin möchte ich in der IT-Branche innovative und nachhaltige Projekte vorantreiben. Besonders stolz bin ich darauf, kreative Lösungen mit technologischen Ansätzen zu kombinieren, die sowohl benutzerfreundlich als auch umweltfreundlich sind.</p>
-            <p>In meiner Freizeit spiele ich Tennis, entdecke neue Hobbys und debattiere leidenschaftlich gerne über aktuelle Themen. Diese Aktivitäten helfen mir, kritisch zu denken und neue Perspektiven zu gewinnen.</p>
-            <p>Ich freue mich darauf, mein Wissen und meine Fähigkeiten in einem professionellen Umfeld weiter auszubauen und zur Entwicklung zukunftsweisender Technologien beizutragen.</p>
         </section>
-        <section id="projects">
-            <h2>Meine Projekte</h2>
-            <div class="project-card">
-                <h3><a href="https://scheinremdy.github.io/weather2.2/">Interactive Weather App</a></h3>
-                <p>Ein dynamisches
+        <section id="projects" class="container">
+            <h2>Projekte</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3><a href="https://scheinremdy.github.io/weather2.2/">Interactive Weather App</a></h3>
+                    <p>Ein dynamisches Wetter-Tool mit API-Integration und benutzerfreundlichem Design.</p>
+                </div>
+                <div class="project-card">
+                    <h3><a href="https://scheinremdy.github.io/Iot-Based-Energy-Monitor/">IoT-Based Energy Monitor</a></h3>
+                    <p>Ein Konzept zur Echtzeit-Überwachung von Energieverbrauchsdaten.</p>
+                </div>
+                <div class="project-card">
+                    <h3><a href="https://scheinremdy.github.io/eco-route-2/">Eco-Route App</a></h3>
+                    <p>Ein umweltfreundlicher Routenplaner für nachhaltige Reisen.</p>
+                </div>
+                <div class="project-card">
+                    <h3><a href="https://scheinremdy.github.io/energy-consumption/">Energy Consumption Tracker</a></h3>
+                    <p>Eine Anwendung zur Analyse und Nachverfolgung von Energieverbrauchsdaten.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="container">
+            <h2>Kontakt</h2>
+            <p>Sie können mich gerne über die folgenden Wege kontaktieren:</p>
+            <ul class="contact-list">
+                <li><i class="fa-solid fa-envelope"></i> scheinremdy@gmail.com</li>
+                <li><i class="fa-brands fa-whatsapp"></i> +63 926 688 4277</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Shine Remollo. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
