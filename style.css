@@ -1,24 +1,26 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  background-color: #f9f9f9;
   color: #333;
 }
 
 header {
-  text-align: center;
-  padding: 20px;
   background-color: #00509e;
   color: white;
+  text-align: center;
+  padding: 40px 20px;
 }
 
-header h1 {
-  margin: 0;
+.header-container h1 {
   font-size: 2.5em;
+  margin: 0;
 }
 
-header p {
+.header-container p {
+  margin-top: 10px;
   font-size: 1.2em;
 }
 
@@ -27,7 +29,7 @@ nav {
   padding: 10px 0;
 }
 
-nav ul {
+.nav-menu {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -35,55 +37,88 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
+.nav-menu li {
   margin: 0 15px;
 }
 
-nav ul li a {
+.nav-menu li a {
   color: white;
   text-decoration: none;
   font-size: 1.1em;
 }
 
-nav ul li a:hover {
+.nav-menu li a:hover {
   text-decoration: underline;
 }
 
-section {
-  max-width: 800px;
-  margin: 20px auto;
+main {
   padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.section-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
   color: #00509e;
 }
 
-.project-list {
+#about, #contact {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list {
   list-style: none;
   padding: 0;
 }
 
-.project-list li {
-  margin-bottom: 20px;
+.skills-list li {
+  margin-bottom: 10px;
 }
 
-.project-list li a {
-  font-weight: bold;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.project-card h3 {
   color: #00509e;
-  text-decoration: none;
 }
 
-.project-list li a:hover {
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #00509e;
+  font-weight: bold;
+}
+
+.project-card a:hover {
   text-decoration: underline;
 }
 
+#contact .contact-content p {
+  margin: 10px 0;
+}
+
 footer {
-  text-align: center;
-  padding: 10px;
   background-color: #00509e;
   color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
 }
