@@ -1,76 +1,70 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    background-color: #f5f9fc;
-    color: #333;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f4f8;
+  color: #333;
 }
 
-/* Header */
 header {
-    background: linear-gradient(90deg, #2563eb, #1e40af);
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Sections */
+h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
 section {
-    padding: 40px 20px;
-    text-align: center;
+  margin-bottom: 30px;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+.profile-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-/* About Me */
 .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
-/* Projects */
-.project-card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+.projects .project {
+  background: white;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.project-card h3 {
-    margin-top: 0;
+.projects .project h3 {
+  margin: 0;
 }
 
-.project-card a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: bold;
+.projects .project a {
+  text-decoration: none;
+  color: #2563eb;
 }
 
-.project-card a:hover {
-    text-decoration: underline;
+.contact p {
+  margin: 5px 0;
 }
 
-/* Contact Section */
-#contact a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Footer */
 footer {
-    background: #1e40af;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 40px;
+  text-align: center;
+  padding: 10px;
+  background-color: #1e40af;
+  color: white;
 }
