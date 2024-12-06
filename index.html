@@ -1,92 +1,79 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Shine Remollo</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine Remollo - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <div class="header-content">
-      <img src="profile_image_circular.png" alt="Profilbild" class="profile-image">
-      <h1>Shine Remollo</h1>
-      <p>IT-Auszubildende | Innovativ | Zielstrebig</p>
-    </div>
-  </header>
+    <!-- Header Section -->
+    <header>
+        <h1>Willkommen zu meinem Portfolio!</h1>
+        <p>Entdecken Sie meine Projekte und Fähigkeiten</p>
+    </header>
 
-  <main>
-    <!-- Über Mich Section -->
-    <section id="ueber-mich" class="section">
-      <h2>Über Mich</h2>
-      <p>
-        Hallo! Ich bin Shine Remollo, 19 Jahre alt und komme aus General Santos City, Philippinen. 
-        Als stolze Filipina habe ich eine Leidenschaft für IT und Technik und möchte meine Fähigkeiten 
-        im Bereich Softwareentwicklung und IT-Management weiterentwickeln. 
-        Ich strebe danach, innovative Lösungen zu schaffen und einen positiven Beitrag zu leisten.
-      </p>
-      <p>
-        Mein Ziel ist es, eine Karriere als Fachinformatikerin zu verfolgen, 
-        wobei ich meine bisherigen Erfahrungen und Kenntnisse in Projekten wie Webentwicklung, 
-        Datenvisualisierung und IoT-Technologien einsetze.
-      </p>
-      <ul>
-        <li><strong>Programmieren:</strong> HTML, CSS, JavaScript</li>
-        <li><strong>Werkzeuge:</strong> Git, GitHub, Figma</li>
-        <li><strong>Sprachen:</strong> Deutsch (B2), Englisch, Filipino</li>
-      </ul>
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <img src="profile_image_circular.png" alt="Profilbild" class="profile-image">
+            <h2>Über Mich</h2>
+            <p>
+                Hallo! Mein Name ist Shine Remollo, ich bin 19 Jahre alt und komme von den Philippinen. 
+                Ich bin leidenschaftlich daran interessiert, meine IT-Fähigkeiten weiterzuentwickeln 
+                und kreative Lösungen für moderne Probleme zu schaffen. Als Fachinformatikerin lege 
+                ich Wert auf Innovation, Teamarbeit und kontinuierliches Lernen.
+            </p>
+            <h3>Fähigkeiten:</h3>
+            <ul>
+                <li>Webentwicklung (HTML, CSS, JavaScript)</li>
+                <li>Datenvisualisierung und Analyse</li>
+                <li>IoT-Anwendungen</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Projekte Section -->
-    <section id="projekte" class="section">
-      <h2>Projekte</h2>
-      <div class="project-card">
-        <h3>🌦️ Interactive Weather App</h3>
-        <p>
-          Eine App, die Wetterdaten in Echtzeit für verschiedene Städte liefert. 
-          Zeigt die aktuelle Temperatur, Wetterbedingungen und eine 7-Tage-Vorhersage.
-        </p>
-        <a href="https://scheinremdy.github.io/weather2.2/" target="_blank" class="btn">Projekt ansehen</a>
-      </div>
-
-      <div class="project-card">
-        <h3>🔋 IoT-Based Energy Monitor</h3>
-        <p>
-          Ein Konzeptprojekt, das Energieverbrauchsdaten visualisiert. 
-          Ziel ist es, Haushalten bei der Überwachung und Optimierung ihres Energieverbrauchs zu helfen.
-        </p>
-        <a href="https://scheinremdy.github.io/Iot-Based-Energy-Monitor/" target="_blank" class="btn">Projekt ansehen</a>
-      </div>
-
-      <div class="project-card">
-        <h3>🌍 EcoRoute</h3>
-        <p>
-          Eine nachhaltige Reiserouten-App, die umweltfreundliche Alternativen wie öffentliche Verkehrsmittel, 
-          Fahrradwege oder Gehwege vorschlägt.
-        </p>
-        <a href="https://scheinremdy.github.io/eco-route-2/" target="_blank" class="btn">Projekt ansehen</a>
-      </div>
-
-      <div class="project-card">
-        <h3>📊 Energy Consumption Tracker</h3>
-        <p>
-          Ein Tool zur Nachverfolgung des Energieverbrauchs kleiner Gemeinschaften, 
-          das den Benutzern hilft, Energiekosten zu sparen.
-        </p>
-        <a href="https://scheinremdy.github.io/energy-consumption/" target="_blank" class="btn">Projekt ansehen</a>
-      </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projekte</h2>
+            <div class="project-card">
+                <h3>Interactive Weather App</h3>
+                <p>Ein interaktives Wetter-Tool, das Echtzeit-Wetterdaten bietet.</p>
+                <a href="https://scheinremdy.github.io/weather2.2/" target="_blank">Projekt ansehen</a>
+            </div>
+            <div class="project-card">
+                <h3>IoT-Based Energy Monitor</h3>
+                <p>Ein Beispiel für ein IoT-basiertes Tool zur Überwachung des Energieverbrauchs.</p>
+                <a href="https://scheinremdy.github.io/Iot-Based-Energy-Monitor/" target="_blank">Projekt ansehen</a>
+            </div>
+            <div class="project-card">
+                <h3>EcoRoute</h3>
+                <p>Eine umweltfreundliche Routenplanungs-App mit Unterstützung für öffentliche Verkehrsmittel.</p>
+                <a href="https://scheinremdy.github.io/eco-route-2/" target="_blank">Projekt ansehen</a>
+            </div>
+            <div class="project-card">
+                <h3>Energy Consumption Tracker</h3>
+                <p>Ein Tool zur Visualisierung und Überwachung des Energieverbrauchs in kleinen Gemeinden.</p>
+                <a href="https://scheinremdy.github.io/energy-consumption/" target="_blank">Projekt ansehen</a>
+            </div>
+        </div>
     </section>
 
-    <!-- Kontakt Section -->
-    <section id="kontakt" class="section">
-      <h2>Kontakt</h2>
-      <p>Email: <a href="mailto:scheinremdy@gmail.com">scheinremdy@gmail.com</a></p>
-      <p>WhatsApp: <a href="https://wa.me/639266884277" target="_blank">+63 926 688 4277</a></p>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Email: <a href="mailto:scheinremdy@example.com">scheinremdy@example.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/639266884277">+639266884277</a></p>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>© 2024 Shine Remollo | Portfolio erstellt mit Liebe zur IT</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Shine Remollo. Alle Rechte vorbehalten.</p>
+    </footer>
 </body>
 </html>
