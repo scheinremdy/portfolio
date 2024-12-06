@@ -1,74 +1,89 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Mein Portfolio</h1>
-        <p>Entdecke meine Projekte und erfahre mehr über mich</p>
-    </header>
+  <header>
+    <h1>Mein Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">Über Mich</a></li>
+        <li><a href="#projects">Projekte</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>Über Mich</h2>
+      <p>
+        Hallo! Mein Name ist Shine, ich bin 19 Jahre alt und komme aus den Philippinen. 
+        Ich spreche Deutsch auf dem Niveau B2 und bin leidenschaftlich daran interessiert, mehr über IT und Softwareentwicklung zu lernen. 
+        Meine Motivation ist es, mich stetig zu verbessern und neue Herausforderungen anzunehmen. 
+        Ich freue mich darauf, in einem professionellen Umfeld zu arbeiten, in dem ich meine Fähigkeiten erweitern und einen Beitrag leisten kann.
+      </p>
+    </section>
 
-    <main>
-        <!-- Dashboard Section -->
-        <section class="dashboard">
-            <div class="button-container">
-                <a href="#about" class="dashboard-button">Über Mich</a>
-                <a href="#projects" class="dashboard-button">Projekte</a>
-                <a href="#contact" class="dashboard-button">Kontakt</a>
-            </div>
-        </section>
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projekte</h2>
+      <div class="project">
+        <h3>Interaktive Wetter-App</h3>
+        <p>
+          Eine dynamische Web-App, die es Benutzern ermöglicht, die aktuelle Wetterlage und Vorhersage für ihre Stadt zu überprüfen. 
+          Demonstrierte Fähigkeiten: API-Integration, JavaScript, UI-Design.
+        </p>
+        <a href="https://scheinremdy.github.io/weather2.2/" target="_blank">Projekt anzeigen</a>
+      </div>
+      <div class="project">
+        <h3>IoT-basiertes Energie-Monitoring</h3>
+        <p>
+          Eine Beispielanwendung zur Überwachung des Energieverbrauchs in kleinen Haushalten. 
+          Demonstrierte Fähigkeiten: Frontend-Entwicklung, Visualisierung von Daten.
+        </p>
+        <a href="https://scheinremdy.github.io/Iot-Based-Energy-Monitor/" target="_blank">Projekt anzeigen</a>
+      </div>
+      <div class="project">
+        <h3>EcoRoute</h3>
+        <p>
+          Eine umweltfreundliche Navigations-App, die alternative Transportmöglichkeiten wie Fahrradfahren oder öffentliche Verkehrsmittel vorschlägt. 
+          Demonstrierte Fähigkeiten: Karten-APIs, UX/UI-Design.
+        </p>
+        <a href="https://scheinremdy.github.io/eco-route-2/" target="_blank">Projekt anzeigen</a>
+      </div>
+      <div class="project">
+        <h3>Energieverbrauch-Tracker</h3>
+        <p>
+          Ein Tool zur Nachverfolgung des Energieverbrauchs in einer Community. 
+          Demonstrierte Fähigkeiten: Datenvisualisierung, Webentwicklung.
+        </p>
+        <a href="https://scheinremdy.github.io/energy-consumption/" target="_blank">Projekt anzeigen</a>
+      </div>
+    </section>
 
-        <!-- Über Mich Section -->
-        <section id="about" class="about">
-            <h2>Über Mich</h2>
-            <p>Hallo! Ich bin Shine, 19 Jahre alt, aus General Santos City, Philippinen. Ich habe B2-Deutschkenntnisse und bin begeistert, neue Fähigkeiten in der IT-Branche zu erlernen und anzuwenden. Als motivierte und lernbegierige Person strebe ich danach, meine Kenntnisse zu vertiefen und meinen Beitrag in einem innovativen Unternehmen zu leisten. Mein Ziel ist es, mich ständig weiterzuentwickeln und Herausforderungen mit Leidenschaft und Engagement anzugehen.</p>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <h2>Projekte</h2>
-            <div class="project-card">
-                <h3>Interaktive Wetter-App</h3>
-                <p>Eine Anwendung, die aktuelle Wetterbedingungen und Vorhersagen anzeigt. Technologien: HTML, CSS, JavaScript.</p>
-                <a href="https://scheinremdy.github.io/weather2.2/" target="_blank" class="btn">Projekt ansehen</a>
-            </div>
-            <div class="project-card">
-                <h3>IoT-basierter Energie-Monitor</h3>
-                <p>Ein Konzept für ein IoT-System zur Überwachung des Energieverbrauchs. Technologien: HTML, CSS, JavaScript.</p>
-                <a href="https://scheinremdy.github.io/Iot-Based-Energy-Monitor/" target="_blank" class="btn">Projekt ansehen</a>
-            </div>
-            <div class="project-card">
-                <h3>EcoRoute</h3>
-                <p>Eine umweltfreundliche Routenplaner-App, die nachhaltige Reisemöglichkeiten vorschlägt. Technologien: HTML, CSS, JavaScript.</p>
-                <a href="https://scheinremdy.github.io/eco-route-2/" target="_blank" class="btn">Projekt ansehen</a>
-            </div>
-            <div class="project-card">
-                <h3>Energieverbrauchsrechner</h3>
-                <p>Ein Tool zur Verfolgung des Energieverbrauchs in kleinen Gemeinschaften. Technologien: HTML, CSS, JavaScript.</p>
-                <a href="https://scheinremdy.github.io/energy-consumption/" target="_blank" class="btn">Projekt ansehen</a>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <h2>Kontakt</h2>
-            <div class="contact-item">
-                <img src="email-icon.png" alt="Email Icon">
-                <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a>
-            </div>
-            <div class="contact-item">
-                <img src="whatsapp-icon.png" alt="WhatsApp Icon">
-                <a href="https://wa.me/639266884277" target="_blank">+63 926 688 4277</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Shine Remollo</p>
-    </footer>
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Kontakt</h2>
+      <p>Erreichen Sie mich über die folgenden Plattformen:</p>
+      <ul>
+        <li>
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon" width="20">
+          <strong>Email:</strong> <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a>
+        </li>
+        <li>
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp Icon" width="20">
+          <strong>WhatsApp:</strong> <a href="https://wa.me/639266884277" target="_blank">+63 926 688 4277</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Shine Remollo</p>
+  </footer>
 </body>
 </html>
