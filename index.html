@@ -4,67 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shine's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f5f9fc;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: linear-gradient(90deg, #2563eb, #1e40af);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #1e40af;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f5f9fc;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+        #projects .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #projects .card h3 {
+            margin: 0;
+        }
+        #contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        #contact input, #contact textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #2563eb;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Dashboard Section -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Über Mich</a></li>
-                <li><a href="#projects">Projekte</a></li>
-            </ul>
-        </nav>
-        <h1>Shine's Portfolio</h1>
-        <p>Willkommen! Hier finden Sie meine Projekte und Fähigkeiten für die Ausbildung als Fachinformatikerin.</p>
-    </header>
 
-    <!-- About Me Section -->
-    <section id="about" class="about-section">
-        <h2>Über Mich</h2>
-        <p>
-            Hallo, ich bin Shine, eine leidenschaftliche angehende Fachinformatikerin mit Erfahrung in der Entwicklung von interaktiven Anwendungen, Datenvisualisierungen und nachhaltigen Technologien. 
-            Ich liebe es, innovative Lösungen zu entwickeln, und strebe danach, mein Wissen im IT-Bereich stetig zu erweitern.
-        </p>
-        <p>
-            <strong>Sprachen:</strong> Deutsch (B2), Englisch, Filipino <br>
-            <strong>Fähigkeiten:</strong> Front-End-Entwicklung, API-Integration, Datenanalyse, Projektmanagement
-        </p>
-    </section>
+<header>
+    <h1>Shine's Portfolio</h1>
+    <p>Fachinformatikerin für Anwendungsentwicklung</p>
+</header>
 
-    <!-- Projects Section -->
-    <main>
-        <section id="projects">
-            <h2>Meine Projekte</h2>
-            <div class="project">
-                <h3>🌦️ Interactive Weather App</h3>
-                <p>Displays weather data with an interactive search feature.</p>
-                <p><strong>Skills:</strong> API Integration, UI Design, JavaScript</p>
-                <a href="https://scheinremdy.github.io/weather2.2/" target="_blank">Projekt ansehen</a>
-            </div>
-            <div class="project">
-                <h3>💡 IoT-Based Energy Monitor</h3>
-                <p>Visualizes energy usage, showcasing IoT-based potential.</p>
-                <p><strong>Skills:</strong> Front-End Development, Data Representation</p>
-                <a href="https://scheinremdy.github.io/Iot-Based-Energy-Monitor/" target="_blank">Projekt ansehen</a>
-            </div>
-            <div class="project">
-                <h3>🌍 EcoRoute</h3>
-                <p>Provides eco-friendly travel routes with map integration.</p>
-                <p><strong>Skills:</strong> Map API, Algorithm Optimization, Multilingual Support</p>
-                <a href="https://scheinremdy.github.io/eco-route-2/" target="_blank">Projekt ansehen</a>
-            </div>
-            <div class="project">
-                <h3>📊 Energy Consumption Tracker</h3>
-                <p>Tracks energy usage and costs with visual graphs.</p>
-                <p><strong>Skills:</strong> Chart.js, Cost Analysis, Data Visualization</p>
-                <a href="https://scheinremdy.github.io/energy-consumption/" target="_blank">Projekt ansehen</a>
-            </div>
-        </section>
-    </main>
+<nav>
+    <a href="#about">Über Mich</a>
+    <a href="#projects">Projekte</a>
+    <a href="#contact">Kontakt</a>
+</nav>
 
-    <footer>
-        <p>© 2024 Shine | Portfolio für Innovation und Entwicklung</p>
-    </footer>
+<section id="about">
+    <h2>Über Mich</h2>
+    <img src="profile_image_circular.png" alt="Profilfoto">
+    <p>Hallo! Ich heiße Shine Remollo und ich bin angehende Fachinformatikerin mit Leidenschaft für Technologie und Problemlösung. Ich habe Erfahrung in der Entwicklung interaktiver Apps und bin kreativ, organisiert und zielorientiert.</p>
+    <p>In meiner Freizeit beschäftige ich mich gerne mit innovativen Projekten, Debatten und Sport.</p>
+</section>
+
+<section id="projects">
+    <h2>Projekte</h2>
+    <div class="card">
+        <h3><a href="https://scheinremdy.github.io/weather2.2/" target="_blank">Interaktive Wetter-App</a></h3>
+        <p>Zeigt Echtzeit-Wetterdaten an und demonstriert API-Integration und UI-Design.</p>
+    </div>
+    <div class="card">
+        <h3><a href="https://scheinremdy.github.io/Iot-Based-Energy-Monitor/" target="_blank">IoT Energy Monitor</a></h3>
+        <p>Verfolgt den Energieverbrauch. Zeigt IoT-Datenvisualisierung (Prototyp).</p>
+    </div>
+    <div class="card">
+        <h3><a href="https://scheinremdy.github.io/eco-route-2/" target="_blank">EcoRoute</a></h3>
+        <p>Empfiehlt umweltfreundliche Reiserouten und unterstützt nachhaltiges Reisen.</p>
+    </div>
+    <div class="card">
+        <h3><a href="https://scheinremdy.github.io/energy-consumption/" target="_blank">Energieverbrauch-Tracker</a></h3>
+        <p>Visualisiert Energieverbrauchsdaten für kleine Gemeinden.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Kontakt</h2>
+    <form>
+        <input type="text" name="name" placeholder="Ihr Name" required>
+        <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+        <textarea name="message" placeholder="Ihre Nachricht" rows="5" required></textarea>
+        <button type="submit">Senden</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2024 Shine Remollo | <a href="https://github.com/scheinremdy" style="color: white;">GitHub</a></p>
+</footer>
+
 </body>
 </html>
