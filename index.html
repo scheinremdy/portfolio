@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Shine</title>
+    <title>Shine's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
+    <!-- Header Section -->
+    <header>
         <h1>Shine's Portfolio</h1>
-        <p>Passionate about IT and learning new skills every day!</p>
+        <p>Driven by passion for IT and a dedication to lifelong learning.</p>
     </header>
+
+    <!-- Navigation Menu -->
     <nav>
         <ul>
             <li><a href="#uber-mich">Über Mich</a></li>
@@ -18,73 +21,80 @@
             <li><a href="#kontakt">Kontakt</a></li>
         </ul>
     </nav>
-    <main>
-        <section id="uber-mich" class="content-section">
-            <h2>Über Mich</h2>
-            <p>Ich bin Shine, 19 Jahre alt, eine stolze Filipina, die leidenschaftlich daran interessiert ist, IT-Fähigkeiten zu entwickeln und Neues zu lernen. Ich habe ein B2-Niveau in Deutsch und möchte meine Fähigkeiten weiter ausbauen, um mit engagierten Unternehmen in Deutschland zusammenzuarbeiten.</p>
-        </section>
-        <section id="projekte" class="content-section">
-            <h2>Projekte</h2>
-            <div class="project-card">
-                <h3>Interactive Weather App</h3>
-                <p>Zeigt Echtzeitwetterdaten an, um Benutzern aktuelle Informationen bereitzustellen.</p>
-                <p><strong>Skills:</strong> API Integration, Responsive Design</p>
-                <a href="https://scheinremdy.github.io/weather2.2/" target="_blank">Website ansehen</a>
-                <a href="#codes-weather">Code anzeigen</a>
-            </div>
-            <div class="project-card">
-                <h3>IoT Energy Monitor</h3>
-                <p>Ein Tool zur Überwachung des Energieverbrauchs in Echtzeit für IoT-Geräte.</p>
-                <p><strong>Skills:</strong> IoT Frameworks, Data Visualization</p>
-                <a href="https://scheinremdy.github.io/Iot-Based-Energy-Monitor/" target="_blank">Website ansehen</a>
-                <a href="#codes-energy">Code anzeigen</a>
-            </div>
-            <div class="project-card">
-                <h3>Eco-Friendly Route Planner</h3>
-                <p>Empfiehlt nachhaltige Reisemöglichkeiten basierend auf Standort und Zielort.</p>
-                <p><strong>Skills:</strong> Geolocation APIs, Multi-language Support</p>
-                <a href="https://scheinremdy.github.io/eco-route-2/" target="_blank">Website ansehen</a>
-                <a href="#codes-eco">Code anzeigen</a>
-            </div>
-            <div class="project-card">
-                <h3>Energy Consumption Tracker</h3>
-                <p>Überwacht und analysiert den Stromverbrauch für kleine Gemeinden.</p>
-                <p><strong>Skills:</strong> Data Analytics, Dashboard Design</p>
-                <a href="https://scheinremdy.github.io/energy-consumption/" target="_blank">Website ansehen</a>
-                <a href="#codes-consumption">Code anzeigen</a>
-            </div>
-        </section>
-        <section id="kontakt" class="content-section">
-            <h2>Kontakt</h2>
-            <p>Email: <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a></p>
-            <p>WhatsApp: <a href="https://wa.me/639266884277" target="_blank">+639266884277</a></p>
-        </section>
-        <section id="codes" class="content-section">
-            <h2>Code Showcase</h2>
-            <div id="codes-weather">
-                <h3>Weather App</h3>
-                <p><strong>Problem:</strong> Echtzeitwetterdaten abrufen.</p>
-                <p><strong>Code:</strong> Implementierung einer API für Wetterdaten.</p>
-            </div>
-            <div id="codes-energy">
-                <h3>IoT Energy Monitor</h3>
-                <p><strong>Problem:</strong> Energieverbrauchsdaten in Echtzeit darstellen.</p>
-                <p><strong>Code:</strong> Einbindung von Sensor-APIs und Visualisierung.</p>
-            </div>
-            <div id="codes-eco">
-                <h3>Eco Route Planner</h3>
-                <p><strong>Problem:</strong> Nachhaltige Reisemöglichkeiten empfehlen.</p>
-                <p><strong>Code:</strong> Geolocation-APIs und Multi-Language-Unterstützung.</p>
-            </div>
-            <div id="codes-consumption">
-                <h3>Energy Consumption Tracker</h3>
-                <p><strong>Problem:</strong> Energiedaten für kleine Gemeinden erfassen.</p>
-                <p><strong>Code:</strong> Data Analytics Tools und Dashboard-Design.</p>
-            </div>
-        </section>
-    </main>
+
+    <!-- Über Mich Section -->
+    <section id="uber-mich">
+        <h2>Über Mich</h2>
+        <p>
+            Hallo! Ich bin Shine, 19 Jahre alt, eine leidenschaftliche IT-Enthusiastin und stolze Filipina. 
+            Ich habe ein B2-Niveau in Deutsch und strebe danach, meine Fähigkeiten kontinuierlich weiterzuentwickeln. 
+            Mein Ziel ist es, innovative IT-Lösungen zu schaffen und neue Technologien zu meistern.
+        </p>
+        <p>
+            **Fähigkeiten:** HTML, CSS, JavaScript, Python, Datenanalyse, Projektmanagement
+        </p>
+        <p>
+            Ich bin ehrgeizig, detailorientiert und bereit, von und mit Ihrem Team zu lernen, um gemeinsam Erfolge zu erzielen!
+        </p>
+    </section>
+
+    <!-- Projekte Section -->
+    <section id="projekte">
+        <h2>Projekte</h2>
+        <!-- Project 1: Weather App -->
+        <div class="project-box">
+            <h3>1. Weather App</h3>
+            <p>
+                **Description:** A web-based application providing real-time weather updates based on user location.
+            </p>
+            <p>
+                **Skills Acquired:** API integration, responsive design, and user interface optimization.
+            </p>
+            <p>
+                **Challenges Solved:** Learned how to handle API requests and display data dynamically using JavaScript.
+            </p>
+            <a href="https://your-weather-app-link" target="_blank">Visit Website</a> |
+            <a href="https://github.com/your-repository-link-weather" target="_blank">View Code</a>
+        </div>
+
+        <!-- Project 2: Energy Tracker -->
+        <div class="project-box">
+            <h3>2. Energy Tracker</h3>
+            <p>
+                **Description:** Tracks and visualizes energy consumption for small communities.
+            </p>
+            <p>
+                **Skills Acquired:** Data visualization using charts, Python scripting, and database handling.
+            </p>
+            <p>
+                **Challenges Solved:** Developed efficient algorithms to process and visualize energy data.
+            </p>
+            <a href="https://your-energy-tracker-link" target="_blank">Visit Website</a> |
+            <a href="https://github.com/your-repository-link-energy" target="_blank">View Code</a>
+        </div>
+
+        <!-- Add more projects similarly -->
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>
+            <strong>Email:</strong> remolloschein@gmail.com <br>
+            <strong>WhatsApp:</strong> +639266884277
+        </p>
+        <div class="icons">
+            <a href="mailto:remolloschein@gmail.com">
+                <img src="email-icon.png" alt="Email Icon">
+            </a>
+            <a href="https://wa.me/639266884277">
+                <img src="whatsapp-icon.png" alt="WhatsApp Icon">
+            </a>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Shine. Alle Rechte vorbehalten.</p>
+        <p>© 2024 Shine's Portfolio | All rights reserved.</p>
     </footer>
 </body>
 </html>
