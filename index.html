@@ -3,99 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shine Remollo Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Shine's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #ffffff, #d9e4f5);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        section {
+            padding: 2rem 1rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .center-text {
+            text-align: center;
+        }
+
+        /* Über Mich Section */
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            gap: 2rem;
+            background: #f0f8ff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .about-text {
+            max-width: 600px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .skill-badge {
+            background: #1e90ff;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+        }
+
+        /* Projekte Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .project-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+        }
+        .project-card a {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Kontakt Section */
+        .contact {
+            text-align: center;
+            background: #f0f8ff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0.5rem;
+            padding: 0.8rem 1rem;
+            border-radius: 50px;
+            background: #1e90ff;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .contact a:hover {
+            background: #ffd700;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Shine Remollo</h1>
+        <h1>Willkommen zu Shine's Portfolio</h1>
         <nav>
-            <ul>
-                <li><a href="#ueber-mich">Über Mich</a></li>
-                <li><a href="#projekte">Projekte</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
+            <a href="#about">Über Mich</a>
+            <a href="#projects">Projekte</a>
+            <a href="#contact">Kontakt</a>
         </nav>
     </header>
 
-    <!-- Über Mich Section -->
-    <section id="ueber-mich" class="section">
-        <h2>Über Mich</h2>
-        <div class="about-container">
-            <p>
-                Hallo! Ich bin Shine, 19 Jahre alt, und komme aus den Philippinen. 
-                Als jemand, der eine große Leidenschaft für IT hat, bin ich bestrebt, meine Fähigkeiten im Bereich 
-                Softwareentwicklung und Webdesign weiter auszubauen. 
-                Mit meinem B2-Niveau in Deutsch freue ich mich darauf, in einem 
-                innovativen und dynamischen Arbeitsumfeld zu wachsen.
-            </p>
-            <h3>Meine IT-Fähigkeiten:</h3>
+    <section id="about">
+        <div class="about">
+            <div class="about-text">
+                <h2>Über Mich</h2>
+                <p>
+                    Hallo! Ich bin Shine, 19 Jahre alt und ein angehender IT-Enthusiast aus den Philippinen. 
+                    Mit einem B2-Niveau in Deutsch und einem starken Interesse am Lernen und Entwickeln 
+                    von technischen Fähigkeiten bin ich motiviert, mit Ihnen zusammenzuarbeiten. 
+                </p>
+                <p>
+                    Meine Fähigkeiten umfassen das Entwickeln kreativer Lösungen, Teamarbeit und kontinuierliches Lernen.
+                </p>
+            </div>
             <div class="skills">
-                <span class="badge">HTML</span>
-                <span class="badge">CSS</span>
-                <span class="badge">JavaScript</span>
-                <span class="badge">Python</span>
-                <span class="badge">Git/GitHub</span>
-                <span class="badge">Responsive Design</span>
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Problem Solving</span>
             </div>
         </div>
     </section>
 
-    <!-- Projekte Section -->
-    <section id="projekte" class="section">
-        <h2>Projekte</h2>
-        <div class="projects-container">
+    <section id="projects">
+        <h2 class="center-text">Projekte</h2>
+        <div class="projects">
             <div class="project-card">
-                <h3>Interactive Weather App</h3>
-                <p>Eine interaktive Webanwendung, die Wetterdaten basierend auf dem Standort anzeigt.</p>
-                <p><strong>Verwendete Fähigkeiten:</strong> API-Integration, Responsive Design</p>
-                <a href="https://scheinremdy.github.io/weather2.2/" target="_blank">Website öffnen</a>
-                <a href="https://github.com/scheinremdy/weather2.2" target="_blank">Code anzeigen</a>
-            </div>
-            <div class="project-card">
-                <h3>IoT-Based Energy Monitor</h3>
-                <p>Ein System zur Überwachung des Energieverbrauchs mithilfe von IoT-Geräten.</p>
-                <p><strong>Verwendete Fähigkeiten:</strong> IoT, Datenvisualisierung</p>
-                <a href="https://scheinremdy.github.io/Iot-Based-Energy-Monitor/" target="_blank">Website öffnen</a>
-                <a href="https://github.com/scheinremdy/Iot-Based-Energy-Monitor" target="_blank">Code anzeigen</a>
-            </div>
-            <div class="project-card">
-                <h3>Eco-Route Planner</h3>
-                <p>Ein umweltfreundlicher Routenplaner für nachhaltiges Reisen.</p>
-                <p><strong>Verwendete Fähigkeiten:</strong> Karten-API, Benutzerinteraktion</p>
-                <a href="https://scheinremdy.github.io/eco-route-2/" target="_blank">Website öffnen</a>
-                <a href="https://github.com/scheinremdy/eco-route-2" target="_blank">Code anzeigen</a>
+                <h3>Green Transportation Scheduler</h3>
+                <p>Ein Projekt zur Förderung nachhaltiger Reiseoptionen.</p>
+                <a href="https://github.com/scheinremdy/green-transport">Repository ansehen</a>
             </div>
             <div class="project-card">
                 <h3>Energy Consumption Tracker</h3>
-                <p>Ein Tool zur Nachverfolgung des Energieverbrauchs in kleinen Gemeinschaften.</p>
-                <p><strong>Verwendete Fähigkeiten:</strong> Datenanalyse, Benutzeroberfläche</p>
-                <a href="https://scheinremdy.github.io/energy-consumption/" target="_blank">Website öffnen</a>
-                <a href="https://github.com/scheinremdy/energy-consumption" target="_blank">Code anzeigen</a>
+                <p>Ermöglicht die Verfolgung von Energiedaten für kleine Gemeinschaften.</p>
+                <a href="https://github.com/scheinremdy/energy-tracker">Repository ansehen</a>
+            </div>
+            <div class="project-card">
+                <h3>Personal Finance Manager</h3>
+                <p>Eine App zur Organisation persönlicher Finanzen.</p>
+                <a href="https://github.com/scheinremdy/finance-manager">Repository ansehen</a>
             </div>
         </div>
     </section>
 
-    <!-- Kontakt Section -->
-    <section id="kontakt" class="section">
-        <h2>Kontakt</h2>
-        <div class="contact-container">
-            <div class="contact-item">
-                <img src="email-icon.png" alt="Email Icon">
-                <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a>
-            </div>
-            <div class="contact-item">
-                <img src="whatsapp-icon.png" alt="WhatsApp Icon">
-                <a href="https://wa.me/639266884277" target="_blank">+63 926 688 4277</a>
-            </div>
+    <section id="contact">
+        <h2 class="center-text">Kontakt</h2>
+        <div class="contact">
+            <a href="mailto:remolloschein@gmail.com">
+                <i class="fas fa-envelope"></i> Email: remolloschein@gmail.com
+            </a>
+            <a href="https://wa.me/639266884277">
+                <i class="fab fa-whatsapp"></i> WhatsApp: +639266884277
+            </a>
         </div>
     </section>
-
-    <footer>
-        <p>&copy; 2024 Shine Remollo</p>
-    </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
