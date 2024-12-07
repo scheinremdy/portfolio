@@ -1,72 +1,135 @@
+/* General Reset */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px;
 }
 
+/* Header */
 header {
-  background: #007BFF;
-  color: #fff;
-  padding: 1rem 0;
-  text-align: center;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
+header h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Navigation */
 nav ul {
-  list-style: none;
-  padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 20px;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 1rem;
+    margin: 0 15px;
 }
 
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
 section {
-  padding: 2rem;
-  margin: 1rem auto;
-  max-width: 800px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-  text-align: center;
+/* Über Mich Section */
+#uber-mich h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 15px;
 }
 
-.project {
-  border: 1px solid #ddd;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+#uber-mich p {
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
-.project h3 {
-  margin-bottom: 0.5rem;
+/* Projekte Section */
+#projekte h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 15px;
 }
 
-.project p {
-  margin-bottom: 1rem;
+.project-box {
+    background: #e9ecef;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.project a {
-  margin-right: 1rem;
-  color: #007BFF;
-  text-decoration: none;
-  font-weight: bold;
+.project-box h3 {
+    color: #0056b3;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-.project a:hover {
-  text-decoration: underline;
+.project-box p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
 }
 
-#kontakt img {
-  width: 20px;
-  vertical-align: middle;
-  margin-right: 0.5rem;
+.project-box a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.project-box a:hover {
+    text-decoration: underline;
+}
+
+/* Kontakt Section */
+#kontakt h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#kontakt p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.icons img {
+    width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
 }
