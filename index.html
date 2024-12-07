@@ -3,196 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shine's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* General styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(120deg, #ffffff, #d9e4f5);
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #1e90ff;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            padding: 1rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            color: #ffd700;
-        }
-        section {
-            padding: 2rem 1rem;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        .center-text {
-            text-align: center;
-        }
-
-        /* Über Mich Section */
-        .about {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-around;
-            gap: 2rem;
-            background: #f0f8ff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .about-text {
-            max-width: 600px;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        .skill-badge {
-            background: #1e90ff;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
-            font-size: 0.9rem;
-        }
-
-        /* Projekte Section */
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-        .project-card {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-        .project-card h3 {
-            margin-bottom: 0.5rem;
-        }
-        .project-card a {
-            display: inline-block;
-            margin-top: 1rem;
-            color: #1e90ff;
-            text-decoration: none;
-        }
-        .project-card a:hover {
-            text-decoration: underline;
-        }
-
-        /* Kontakt Section */
-        .contact {
-            text-align: center;
-            background: #f0f8ff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .contact a {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin: 0.5rem;
-            padding: 0.8rem 1rem;
-            border-radius: 50px;
-            background: #1e90ff;
-            color: white;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-        .contact a:hover {
-            background: #ffd700;
-        }
-    </style>
+    <title>Portfolio | Shine</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Willkommen zu Shine's Portfolio</h1>
-        <nav>
-            <a href="#about">Über Mich</a>
-            <a href="#projects">Projekte</a>
-            <a href="#contact">Kontakt</a>
-        </nav>
+    <header class="hero">
+        <h1>Shine's Portfolio</h1>
+        <p>Passionate about IT and learning new skills every day!</p>
     </header>
-
-    <section id="about">
-        <div class="about">
-            <div class="about-text">
-                <h2>Über Mich</h2>
-                <p>
-                    Hallo! Ich bin Shine, 19 Jahre alt und ein angehender IT-Enthusiast aus den Philippinen. 
-                    Mit einem B2-Niveau in Deutsch und einem starken Interesse am Lernen und Entwickeln 
-                    von technischen Fähigkeiten bin ich motiviert, mit Ihnen zusammenzuarbeiten. 
-                </p>
-                <p>
-                    Meine Fähigkeiten umfassen das Entwickeln kreativer Lösungen, Teamarbeit und kontinuierliches Lernen.
-                </p>
-            </div>
-            <div class="skills">
-                <span class="skill-badge">HTML</span>
-                <span class="skill-badge">CSS</span>
-                <span class="skill-badge">JavaScript</span>
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">Problem Solving</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2 class="center-text">Projekte</h2>
-        <div class="projects">
+    <nav>
+        <ul>
+            <li><a href="#uber-mich">Über Mich</a></li>
+            <li><a href="#projekte">Projekte</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="uber-mich" class="content-section">
+            <h2>Über Mich</h2>
+            <p>Ich bin Shine, 19 Jahre alt, eine stolze Filipina, die leidenschaftlich daran interessiert ist, IT-Fähigkeiten zu entwickeln und Neues zu lernen. Ich habe ein B2-Niveau in Deutsch und möchte meine Fähigkeiten weiter ausbauen, um mit engagierten Unternehmen in Deutschland zusammenzuarbeiten.</p>
+        </section>
+        <section id="projekte" class="content-section">
+            <h2>Projekte</h2>
             <div class="project-card">
-                <h3>Green Transportation Scheduler</h3>
-                <p>Ein Projekt zur Förderung nachhaltiger Reiseoptionen.</p>
-                <a href="https://github.com/scheinremdy/green-transport">Repository ansehen</a>
+                <h3>Interactive Weather App</h3>
+                <p>Zeigt Echtzeitwetterdaten an, um Benutzern aktuelle Informationen bereitzustellen.</p>
+                <p><strong>Skills:</strong> API Integration, Responsive Design</p>
+                <a href="https://scheinremdy.github.io/weather2.2/" target="_blank">Website ansehen</a>
+                <a href="#codes-weather">Code anzeigen</a>
+            </div>
+            <div class="project-card">
+                <h3>IoT Energy Monitor</h3>
+                <p>Ein Tool zur Überwachung des Energieverbrauchs in Echtzeit für IoT-Geräte.</p>
+                <p><strong>Skills:</strong> IoT Frameworks, Data Visualization</p>
+                <a href="https://scheinremdy.github.io/Iot-Based-Energy-Monitor/" target="_blank">Website ansehen</a>
+                <a href="#codes-energy">Code anzeigen</a>
+            </div>
+            <div class="project-card">
+                <h3>Eco-Friendly Route Planner</h3>
+                <p>Empfiehlt nachhaltige Reisemöglichkeiten basierend auf Standort und Zielort.</p>
+                <p><strong>Skills:</strong> Geolocation APIs, Multi-language Support</p>
+                <a href="https://scheinremdy.github.io/eco-route-2/" target="_blank">Website ansehen</a>
+                <a href="#codes-eco">Code anzeigen</a>
             </div>
             <div class="project-card">
                 <h3>Energy Consumption Tracker</h3>
-                <p>Ermöglicht die Verfolgung von Energiedaten für kleine Gemeinschaften.</p>
-                <a href="https://github.com/scheinremdy/energy-tracker">Repository ansehen</a>
+                <p>Überwacht und analysiert den Stromverbrauch für kleine Gemeinden.</p>
+                <p><strong>Skills:</strong> Data Analytics, Dashboard Design</p>
+                <a href="https://scheinremdy.github.io/energy-consumption/" target="_blank">Website ansehen</a>
+                <a href="#codes-consumption">Code anzeigen</a>
             </div>
-            <div class="project-card">
-                <h3>Personal Finance Manager</h3>
-                <p>Eine App zur Organisation persönlicher Finanzen.</p>
-                <a href="https://github.com/scheinremdy/finance-manager">Repository ansehen</a>
+        </section>
+        <section id="kontakt" class="content-section">
+            <h2>Kontakt</h2>
+            <p>Email: <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/639266884277" target="_blank">+639266884277</a></p>
+        </section>
+        <section id="codes" class="content-section">
+            <h2>Code Showcase</h2>
+            <div id="codes-weather">
+                <h3>Weather App</h3>
+                <p><strong>Problem:</strong> Echtzeitwetterdaten abrufen.</p>
+                <p><strong>Code:</strong> Implementierung einer API für Wetterdaten.</p>
             </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2 class="center-text">Kontakt</h2>
-        <div class="contact">
-            <a href="mailto:remolloschein@gmail.com">
-                <i class="fas fa-envelope"></i> Email: remolloschein@gmail.com
-            </a>
-            <a href="https://wa.me/639266884277">
-                <i class="fab fa-whatsapp"></i> WhatsApp: +639266884277
-            </a>
-        </div>
-    </section>
+            <div id="codes-energy">
+                <h3>IoT Energy Monitor</h3>
+                <p><strong>Problem:</strong> Energieverbrauchsdaten in Echtzeit darstellen.</p>
+                <p><strong>Code:</strong> Einbindung von Sensor-APIs und Visualisierung.</p>
+            </div>
+            <div id="codes-eco">
+                <h3>Eco Route Planner</h3>
+                <p><strong>Problem:</strong> Nachhaltige Reisemöglichkeiten empfehlen.</p>
+                <p><strong>Code:</strong> Geolocation-APIs und Multi-Language-Unterstützung.</p>
+            </div>
+            <div id="codes-consumption">
+                <h3>Energy Consumption Tracker</h3>
+                <p><strong>Problem:</strong> Energiedaten für kleine Gemeinden erfassen.</p>
+                <p><strong>Code:</strong> Data Analytics Tools und Dashboard-Design.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Shine. Alle Rechte vorbehalten.</p>
+    </footer>
 </body>
 </html>
