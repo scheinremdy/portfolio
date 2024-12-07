@@ -1,69 +1,101 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine Remollo Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <header>
-    <h1>Shine Remollo</h1>
-    <nav>
-      <ul>
-        <li><a href="#uber-mich">Über Mich</a></li>
-        <li><a href="#projekte">Projekte</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Shine Remollo</h1>
+        <nav>
+            <ul>
+                <li><a href="#ueber-mich">Über Mich</a></li>
+                <li><a href="#projekte">Projekte</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="uber-mich">
-    <h2>Über Mich</h2>
-    <p>
-      Hallo! Ich bin Shine Remollo, 19 Jahre alt und eine leidenschaftliche Lernende. 
-      Ich habe B2-Deutschkenntnisse und strebe danach, meine IT-Fähigkeiten ständig weiterzuentwickeln. 
-      Mit meiner Hingabe, Problemlösungsfähigkeiten und Begeisterung für Technologie 
-      freue ich mich darauf, mit Ihnen zu lernen und zu wachsen.
-    </p>
-  </section>
+    <!-- Über Mich Section -->
+    <section id="ueber-mich" class="section">
+        <h2>Über Mich</h2>
+        <div class="about-container">
+            <p>
+                Hallo! Ich bin Shine, 19 Jahre alt, und komme aus den Philippinen. 
+                Als jemand, der eine große Leidenschaft für IT hat, bin ich bestrebt, meine Fähigkeiten im Bereich 
+                Softwareentwicklung und Webdesign weiter auszubauen. 
+                Mit meinem B2-Niveau in Deutsch freue ich mich darauf, in einem 
+                innovativen und dynamischen Arbeitsumfeld zu wachsen.
+            </p>
+            <h3>Meine IT-Fähigkeiten:</h3>
+            <div class="skills">
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">Python</span>
+                <span class="badge">Git/GitHub</span>
+                <span class="badge">Responsive Design</span>
+            </div>
+        </div>
+    </section>
 
-  <section id="projekte">
-    <h2>Projekte</h2>
-    <div class="project">
-      <h3>Weather App</h3>
-      <p>Ein interaktives Wettertool, das API-Integration verwendet. <strong>Verwendete Fähigkeiten:</strong> JavaScript, CSS, API-Integration.</p>
-      <a href="https://github.com/scheinremdy/weather2.2" target="_blank">View Code</a>
-      <a href="https://scheinremdy.github.io/weather2.2/" target="_blank">View Demo</a>
-    </div>
-    <div class="project">
-      <h3>IoT Energy Monitor</h3>
-      <p>Eine Plattform zur Überwachung des Energieverbrauchs in Echtzeit. <strong>Verwendete Fähigkeiten:</strong> Python, IoT, Datenvisualisierung.</p>
-      <a href="https://github.com/scheinremdy/Iot-Based-Energy-Monitor" target="_blank">View Code</a>
-      <a href="https://scheinremdy.github.io/Iot-Based-Energy-Monitor/" target="_blank">View Demo</a>
-    </div>
-    <div class="project">
-      <h3>Eco-Friendly Route Planner</h3>
-      <p>Ein Routenplaner, der nachhaltige Reisemöglichkeiten priorisiert. <strong>Verwendete Fähigkeiten:</strong> Geolocation, UI/UX Design, JavaScript.</p>
-      <a href="https://github.com/scheinremdy/eco-route-2" target="_blank">View Code</a>
-      <a href="https://scheinremdy.github.io/eco-route-2/" target="_blank">View Demo</a>
-    </div>
-    <div class="project">
-      <h3>Energy Consumption Tracker</h3>
-      <p>Ein Tool zur Überwachung des Energieverbrauchs von Gemeinschaften. <strong>Verwendete Fähigkeiten:</strong> Python, Datenanalyse, Web-Entwicklung.</p>
-      <a href="https://github.com/scheinremdy/energy-consumption" target="_blank">View Code</a>
-      <a href="https://scheinremdy.github.io/energy-consumption/" target="_blank">View Demo</a>
-    </div>
-  </section>
+    <!-- Projekte Section -->
+    <section id="projekte" class="section">
+        <h2>Projekte</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Interactive Weather App</h3>
+                <p>Eine interaktive Webanwendung, die Wetterdaten basierend auf dem Standort anzeigt.</p>
+                <p><strong>Verwendete Fähigkeiten:</strong> API-Integration, Responsive Design</p>
+                <a href="https://scheinremdy.github.io/weather2.2/" target="_blank">Website öffnen</a>
+                <a href="https://github.com/scheinremdy/weather2.2" target="_blank">Code anzeigen</a>
+            </div>
+            <div class="project-card">
+                <h3>IoT-Based Energy Monitor</h3>
+                <p>Ein System zur Überwachung des Energieverbrauchs mithilfe von IoT-Geräten.</p>
+                <p><strong>Verwendete Fähigkeiten:</strong> IoT, Datenvisualisierung</p>
+                <a href="https://scheinremdy.github.io/Iot-Based-Energy-Monitor/" target="_blank">Website öffnen</a>
+                <a href="https://github.com/scheinremdy/Iot-Based-Energy-Monitor" target="_blank">Code anzeigen</a>
+            </div>
+            <div class="project-card">
+                <h3>Eco-Route Planner</h3>
+                <p>Ein umweltfreundlicher Routenplaner für nachhaltiges Reisen.</p>
+                <p><strong>Verwendete Fähigkeiten:</strong> Karten-API, Benutzerinteraktion</p>
+                <a href="https://scheinremdy.github.io/eco-route-2/" target="_blank">Website öffnen</a>
+                <a href="https://github.com/scheinremdy/eco-route-2" target="_blank">Code anzeigen</a>
+            </div>
+            <div class="project-card">
+                <h3>Energy Consumption Tracker</h3>
+                <p>Ein Tool zur Nachverfolgung des Energieverbrauchs in kleinen Gemeinschaften.</p>
+                <p><strong>Verwendete Fähigkeiten:</strong> Datenanalyse, Benutzeroberfläche</p>
+                <a href="https://scheinremdy.github.io/energy-consumption/" target="_blank">Website öffnen</a>
+                <a href="https://github.com/scheinremdy/energy-consumption" target="_blank">Code anzeigen</a>
+            </div>
+        </div>
+    </section>
 
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <p>
-      <img src="email-icon.png" alt="Email Icon"> <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a>
-    </p>
-    <p>
-      <img src="whatsapp-icon.png" alt="WhatsApp Icon"> <a href="https://wa.me/639266884277" target="_blank">+639266884277</a>
-    </p>
-  </section>
+    <!-- Kontakt Section -->
+    <section id="kontakt" class="section">
+        <h2>Kontakt</h2>
+        <div class="contact-container">
+            <div class="contact-item">
+                <img src="email-icon.png" alt="Email Icon">
+                <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <img src="whatsapp-icon.png" alt="WhatsApp Icon">
+                <a href="https://wa.me/639266884277" target="_blank">+63 926 688 4277</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shine Remollo</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
