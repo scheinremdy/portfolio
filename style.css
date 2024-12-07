@@ -18,7 +18,7 @@ a {
 
 /* Header Styles */
 .header {
-    background-color: #333;
+    background-color: #007BFF; /* Blue background for the header */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -27,7 +27,7 @@ a {
 .header h1 {
     font-size: 2.5em;
     margin: 0;
-    color: #007BFF; /* Blue color for your name */
+    color: #fff; /* White color for your name */
 }
 
 .header p {
@@ -52,7 +52,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #007BFF;
+    color: #FFD700; /* Hover color: gold */
 }
 
 /* About Section */
