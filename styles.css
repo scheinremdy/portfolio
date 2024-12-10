@@ -1,47 +1,51 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    transition: background-color 0.5s, color 0.5s;
 }
 
-/* Dark Mode Toggle */
-:root {
-  --primary-color: #3498db;
-  --background-color: #ffffff;
-  --text-color: #333333;
-  --text-light: #ffffff;
+/* Light and Dark Mode */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
 }
 
-.dark-mode {
-  --primary-color: #2c3e50;
-  --background-color: #1a1a1a;
-  --text-color: #f1f1f1;
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
 }
 
 header {
-  background: var(--primary-color);
-  padding: 1rem;
-  color: var(--text-light);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background: #007acc;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
 }
 
-/* Project Section */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
 .project {
-  background: var(--primary-color);
-  color: var(--text-light);
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 10px;
+    margin: 1rem 0;
 }
 
-/* Footer */
 footer {
-  background: var(--primary-color);
-  color: var(--text-light);
-  text-align: center;
-  padding: 1rem;
+    background: #007acc;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
 }
