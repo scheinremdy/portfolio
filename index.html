@@ -3,73 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Sunshine Remollo</title>
+    <title>Sunshine Remollo Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
         <div class="nav-container">
-            <h1>Sunshine Remollo</h1>
+            <h1 class="brand">Sunshine Remollo</h1>
             <ul class="nav-links">
                 <li><a href="#about">Wer bin ich?</a></li>
                 <li><a href="#projects">Projekte</a></li>
                 <li><a href="#tech-stack">Tech Stack</a></li>
                 <li><a href="#contact">Kontakt</a></li>
+                <li>
+                    <button id="dark-mode-toggle">Dark Mode</button>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Who Am I Section -->
-    <section id="about">
+    <!-- About Section -->
+    <section id="about" class="section">
         <h2>Wer bin ich?</h2>
-        <p>Willkommen in meinem Portfolio!</p>
-        <p>Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus General Santos City auf den Philippinen. Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. Das hat mich aber nicht abgehalten. Im Gegenteil, es hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.</p>
-        <p>Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich zum Beispiel eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für die Digitalisierung und innovative Lösungen zu vertiefen.</p>
-        <p>Neben meiner Leidenschaft für Technologie spiele ich auch Tennis. Als Varsity-Spielerin hatte ich das Glück, eine kostenlose Bildung zu bekommen, was mir geholfen hat, sowohl akademisch als auch persönlich zu wachsen. Der Sport hat mir Disziplin und Ausdauer beigebracht – Werte, die ich in allen Bereichen meines Lebens, auch in meiner Arbeit, einsetze.</p>
-        <p>Mein Ziel ist es, in einem IT-Unternehmen zu arbeiten, das die Digitalisierung vorantreibt und eine Kultur der Vielfalt sowie des Lernens fördert. Ich freue mich darauf, mein Wissen und meine Fähigkeiten in die digitale Zukunft einzubringen. Viel Spaß beim Durchstöbern meines Portfolios!</p>
+        <div class="about-container">
+            <p>Hallo! Mein Name ist Sunshine Remollo, ich bin 19 Jahre alt und komme aus General Santos City auf den Philippinen.</p>
+            <p>Ich habe mir meine Kenntnisse durch kostenlose Online-Kurse wie Google und edX angeeignet. Dadurch konnte ich spannende Projekte entwickeln, wie eine Wetter-App und einen Stromverbrauchs-Tracker.</p>
+            <p>Ich lerne nicht nur leidenschaftlich IT-Fähigkeiten, sondern spiele auch gerne Tennis. Diese Kombination aus Technik und Sport hat mir Disziplin, Kreativität und Ausdauer beigebracht.</p>
+        </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
+    <!-- Interactive Project Showcase -->
+    <section id="projects" class="section">
         <h2>Projekte</h2>
-        <div class="project-showcase">
-            <div class="project">
+        <div class="project-carousel">
+            <div class="project-card">
                 <h3>Wetter-App</h3>
-                <p>Beschreibung: Eine interaktive Wetter-App, die aktuelle Wetterbedingungen und Vorhersagen in Echtzeit anzeigt.</p>
-                <p>Herausforderung: API-Integration und Echtzeitdatenabruf.</p>
-                <p>Lösung: Verwendung der OpenWeatherMap-API und Verbesserung der Ladezeiten mit asynchronem JavaScript.</p>
-                <a href="https://github.com/scheinremdy/weather-app" target="_blank">Code ansehen</a>
+                <p>Eine App, die Wetterdaten in Echtzeit anzeigt.</p>
+                <p><strong>Herausforderung:</strong> Echtzeitdaten von APIs integrieren.</p>
+                <p><strong>Lösung:</strong> OpenWeatherMap API + JavaScript asynchron verwendet.</p>
+                <button onclick="window.open('https://github.com/scheinremdy/weather-app', '_blank')">Projekt anzeigen</button>
             </div>
-            <div class="project">
+            <div class="project-card">
                 <h3>Stromverbrauchs-Tracker</h3>
-                <p>Beschreibung: Eine Website zur Überwachung und Analyse des Stromverbrauchs in kleinen Gemeinschaften.</p>
-                <p>Herausforderung: Datenvisualisierung und benutzerfreundliches Design.</p>
-                <p>Lösung: Einsatz von Chart.js für interaktive Diagramme und ein modernes UX-Design.</p>
-                <a href="https://github.com/scheinremdy/energy-tracker" target="_blank">Code ansehen</a>
+                <p>Visualisiert Energieverbrauch für kleine Gemeinschaften.</p>
+                <p><strong>Herausforderung:</strong> Datenvisualisierung.</p>
+                <p><strong>Lösung:</strong> Chart.js und intuitive UX-Designs integriert.</p>
+                <button onclick="window.open('https://github.com/scheinremdy/energy-tracker', '_blank')">Projekt anzeigen</button>
             </div>
-            <div class="project">
-                <h3>Umweltfreundlicher Routenplaner</h3>
-                <p>Beschreibung: Eine App, die nachhaltige Transportmöglichkeiten wie öffentliche Verkehrsmittel oder Radwege vorschlägt.</p>
-                <p>Herausforderung: Integration von Standort-APIs und Berechnung von umweltfreundlichen Routen.</p>
-                <p>Lösung: Google Maps API und Optimierungsalgorithmen für die Routenberechnung.</p>
-                <a href="https://github.com/scheinremdy/eco-route-planner" target="_blank">Code ansehen</a>
-            </div>
-            <div class="project">
-                <h3>IoT-Management-System</h3>
-                <p>Beschreibung: Ein Tool zur Verwaltung von IoT-Geräten in Haushalten und kleinen Unternehmen.</p>
-                <p>Herausforderung: Gerätekommunikation und Datensicherheit.</p>
-                <p>Lösung: MQTT-Protokoll und Datenverschlüsselungstechniken implementiert.</p>
-                <a href="https://github.com/scheinremdy/iot-management" target="_blank">Code ansehen</a>
+            <div class="project-card">
+                <h3>Routenplaner</h3>
+                <p>Nachhaltige Routen für öffentliche Verkehrsmittel und mehr.</p>
+                <p><strong>Herausforderung:</strong> Standortintegration.</p>
+                <p><strong>Lösung:</strong> Google Maps API zur Routenoptimierung genutzt.</p>
+                <button onclick="window.open('https://github.com/scheinremdy/eco-route-planner', '_blank')">Projekt anzeigen</button>
             </div>
         </div>
     </section>
 
     <!-- Tech Stack Section -->
-    <section id="tech-stack">
+    <section id="tech-stack" class="section">
         <h2>Tech Stack</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
+        <ul class="tech-list">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
             <li>Python</li>
             <li>APIs (Google Maps, OpenWeatherMap)</li>
             <li>Chart.js</li>
@@ -78,16 +76,23 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Kontakt</h2>
-        <p>GitHub: <a href="https://github.com/scheinremdy" target="_blank">scheinremdy</a></p>
-        <p>Email: <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a></p>
-        <p>WhatsApp: +639266884277</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/scheinremdy" target="_blank">scheinremdy</a></p>
+        <p><strong>Email:</strong> <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a></p>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
+    <footer class="footer">
+        <p>© 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
     </footer>
+
+    <!-- Dark Mode Script -->
+    <script>
+        const toggle = document.getElementById('dark-mode-toggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
