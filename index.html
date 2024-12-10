@@ -1,225 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shine's Interactive Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Base Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(135deg, #00bfff, #005f6b);
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-            position: relative;
-        }
-
-        header h1 {
-            font-size: 4em;
-            margin: 0;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        .hero-message {
-            font-size: 1.5em;
-            margin-top: 20px;
-            animation: fadeIn 2s ease-in-out 1s;
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        /* Navigation */
-        nav {
-            background-color: #222;
-            padding: 10px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: white;
-            padding: 10px;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 1.2em;
-        }
-
-        nav a:hover {
-            background-color: #333;
-            transition: background-color 0.3s;
-        }
-
-        /* Projects Section */
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
-            padding: 50px 20px;
-        }
-
-        .project-card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: scale(1.05);
-        }
-
-        .project-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .project-card .details {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .project-card .details h3 {
-            margin: 0;
-            font-size: 1.5em;
-        }
-
-        .project-card .details p {
-            color: #555;
-        }
-
-        /* Skills Section */
-        .skills {
-            padding: 50px 20px;
-            background-color: #e4e4e4;
-            text-align: center;
-        }
-
-        .skills h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .skills .skill-bar {
-            background-color: #ddd;
-            border-radius: 25px;
-            overflow: hidden;
-            height: 30px;
-            margin: 10px 0;
-        }
-
-        .skills .skill-bar span {
-            display: block;
-            height: 100%;
-            background-color: #00bfff;
-            width: 0;
-            animation: load 2s forwards;
-        }
-
-        @keyframes load {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        .social-icons {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .social-icons a {
-            color: #333;
-            font-size: 2em;
-            margin: 0 15px;
-            transition: color 0.3s;
-        }
-
-        .social-icons a:hover {
-            color: #00bfff;
-        }
-
-        footer {
-            background-color: #222;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+    <title>Portfolio | Sunshine Remollo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Interactive Portfolio!</h1>
-        <div class="hero-message">
-            <p>Hi, I'm Shine Remollo. A Filipino tech enthusiast passionate about IT development and innovation.</p>
-        </div>
-    </header>
-
+    <!-- Navigation -->
     <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <div class="nav-container">
+            <h1>Sunshine Remollo</h1>
+            <ul class="nav-links">
+                <li><a href="#about">Wer bin ich?</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section id="projects" class="projects">
-        <div class="project-card">
-            <img src="project1.jpg" alt="Project 1">
-            <div class="details">
-                <h3>Project One</h3>
-                <p>A brief description of this amazing project...</p>
-            </div>
-        </div>
+    <!-- Who Am I Section -->
+    <section id="about">
+        <h2>Wer bin ich?</h2>
+        <p>Willkommen in meinem Portfolio!</p>
+        <p>Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus General Santos City auf den Philippinen. Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. Das hat mich aber nicht abgehalten. Im Gegenteil, es hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.</p>
+        <p>Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich zum Beispiel eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für die Digitalisierung und innovative Lösungen zu vertiefen.</p>
+        <p>Neben meiner Leidenschaft für Technologie spiele ich auch Tennis. Als Varsity-Spielerin hatte ich das Glück, eine kostenlose Bildung zu bekommen, was mir geholfen hat, sowohl akademisch als auch persönlich zu wachsen. Der Sport hat mir Disziplin und Ausdauer beigebracht – Werte, die ich in allen Bereichen meines Lebens, auch in meiner Arbeit, einsetze.</p>
+        <p>Mein Ziel ist es, in einem IT-Unternehmen zu arbeiten, das die Digitalisierung vorantreibt und eine Kultur der Vielfalt sowie des Lernens fördert. Ich freue mich darauf, mein Wissen und meine Fähigkeiten in die digitale Zukunft einzubringen. Viel Spaß beim Durchstöbern meines Portfolios!</p>
+    </section>
 
-        <div class="project-card">
-            <img src="project2.jpg" alt="Project 2">
-            <div class="details">
-                <h3>Project Two</h3>
-                <p>Another awesome project description...</p>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projekte</h2>
+        <div class="project-showcase">
+            <div class="project">
+                <h3>Wetter-App</h3>
+                <p>Beschreibung: Eine interaktive Wetter-App, die aktuelle Wetterbedingungen und Vorhersagen in Echtzeit anzeigt.</p>
+                <p>Herausforderung: API-Integration und Echtzeitdatenabruf.</p>
+                <p>Lösung: Verwendung der OpenWeatherMap-API und Verbesserung der Ladezeiten mit asynchronem JavaScript.</p>
+                <a href="https://github.com/scheinremdy/weather-app" target="_blank">Code ansehen</a>
             </div>
-        </div>
-
-        <div class="project-card">
-            <img src="project3.jpg" alt="Project 3">
-            <div class="details">
-                <h3>Project Three</h3>
-                <p>Details of my most recent work...</p>
+            <div class="project">
+                <h3>Stromverbrauchs-Tracker</h3>
+                <p>Beschreibung: Eine Website zur Überwachung und Analyse des Stromverbrauchs in kleinen Gemeinschaften.</p>
+                <p>Herausforderung: Datenvisualisierung und benutzerfreundliches Design.</p>
+                <p>Lösung: Einsatz von Chart.js für interaktive Diagramme und ein modernes UX-Design.</p>
+                <a href="https://github.com/scheinremdy/energy-tracker" target="_blank">Code ansehen</a>
+            </div>
+            <div class="project">
+                <h3>Umweltfreundlicher Routenplaner</h3>
+                <p>Beschreibung: Eine App, die nachhaltige Transportmöglichkeiten wie öffentliche Verkehrsmittel oder Radwege vorschlägt.</p>
+                <p>Herausforderung: Integration von Standort-APIs und Berechnung von umweltfreundlichen Routen.</p>
+                <p>Lösung: Google Maps API und Optimierungsalgorithmen für die Routenberechnung.</p>
+                <a href="https://github.com/scheinremdy/eco-route-planner" target="_blank">Code ansehen</a>
+            </div>
+            <div class="project">
+                <h3>IoT-Management-System</h3>
+                <p>Beschreibung: Ein Tool zur Verwaltung von IoT-Geräten in Haushalten und kleinen Unternehmen.</p>
+                <p>Herausforderung: Gerätekommunikation und Datensicherheit.</p>
+                <p>Lösung: MQTT-Protokoll und Datenverschlüsselungstechniken implementiert.</p>
+                <a href="https://github.com/scheinremdy/iot-management" target="_blank">Code ansehen</a>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills">
-        <h2>My Skills</h2>
-        <div class="skill-bar">
-            <span style="width: 85%"></span>
-        </div>
-        <div class="skill-bar">
-            <span style="width: 90%"></span>
-        </div>
-        <div class="skill-bar">
-            <span style="width: 70%"></span>
-        </div>
+    <!-- Tech Stack Section -->
+    <section id="tech-stack">
+        <h2>Tech Stack</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python</li>
+            <li>APIs (Google Maps, OpenWeatherMap)</li>
+            <li>Chart.js</li>
+            <li>GitHub</li>
+        </ul>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>GitHub: <a href="https://github.com/scheinremdy" target="_blank">scheinremdy</a></p>
+        <p>Email: <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a></p>
+        <p>WhatsApp: +639266884277</p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="social-icons">
-            <a href="https://github.com/shine" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/shine" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:shine@example.com"><i class="fas fa-envelope"></i></a>
-        </div>
-        <p>&copy; 2024 Shine Remollo</p>
+        <p>&copy; 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 </html>
