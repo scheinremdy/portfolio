@@ -1,36 +1,47 @@
-/* Global Styles */
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+/* Dark Mode Toggle */
 :root {
-    --bg-color: #ffffff;
-    --text-color: #000000;
+  --primary-color: #3498db;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --text-light: #ffffff;
 }
 
-[data-theme="dark"] {
-    --bg-color: #121212;
-    --text-color: #E0E0E0;
+.dark-mode {
+  --primary-color: #2c3e50;
+  --background-color: #1a1a1a;
+  --text-color: #f1f1f1;
 }
 
-/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: var(--bg-color);
+  background: var(--primary-color);
+  padding: 1rem;
+  color: var(--text-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Project Showcase */
-.project-card {
-    margin: 20px;
-    padding: 15px;
-    border: 1px solid var(--text-color);
-    border-radius: 10px;
+/* Project Section */
+.project {
+  background: var(--primary-color);
+  color: var(--text-light);
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
 }
