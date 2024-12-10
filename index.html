@@ -3,125 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio von Sunshine Remollo</title>
+    <title>Sunshine Remollo - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://via.placeholder.com/32" type="image/png"> <!-- Favicon -->
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Dark Mode Toggle -->
-    <div class="dark-mode-toggle">
-        <input type="checkbox" id="darkModeToggle">
-        <label for="darkModeToggle">🌙</label>
-    </div>
 
     <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-text">
-            <h1>Hallo, ich bin Sunshine Remollo</h1>
-            <p>Willkommen in meinem Portfolio, das Innovation und Kreativität kombiniert.</p>
-            <a href="#projects" class="btn">Meine Projekte entdecken</a>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Willkommen in meinem Portfolio!</h1>
+            <p>Ich bin Sunshine Remollo, 19 Jahre alt und leidenschaftlich daran interessiert, die digitale Welt zu gestalten.</p>
+            <button id="dark-mode-toggle">🌙 Dunkelmodus</button>
         </div>
-    </header>
+    </section>
 
     <!-- About Me Section -->
-    <section id="about" class="about">
-        <h2>Wer bin ich?</h2>
-        <div class="about-content">
-            <div class="text">
-                <p>
-                    Ich heiße Sunshine Remollo, 19 Jahre alt, aus General Santos City, Philippinen. 
-                    Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. 
-                    Das hat mich aber nicht abgehalten. Im Gegenteil, es hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.
-                </p>
-                <p>
-                    Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich zum Beispiel eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. 
-                    Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für die Digitalisierung und innovative Lösungen zu vertiefen.
-                </p>
-                <p>
-                    Neben meiner Leidenschaft für Technologie spiele ich auch Tennis. Als Varsity-Spielerin hatte ich das Glück, eine kostenlose Bildung zu bekommen, was mir geholfen hat, sowohl akademisch als auch persönlich zu wachsen. 
-                    Der Sport hat mir Disziplin und Ausdauer beigebracht – Werte, die ich in allen Bereichen meines Lebens, auch in meiner Arbeit, einsetze.
-                </p>
-            </div>
-            <div class="photo">
-                <img src="https://via.placeholder.com/300" alt="Sunshine Remollo">
-            </div>
+    <section id="about-me">
+        <div class="container">
+            <h2>Wer bin ich?</h2>
+            <p>Ich bin ein junger Entwickler aus General Santos City, Philippinen. Mit einer Leidenschaft für Technologie habe ich viele meiner Fähigkeiten durch selbstständiges Lernen und kostenlose Online-Kurse erworben.</p>
+            <p>Ich habe an Projekten gearbeitet, die Nachhaltigkeit fördern, wie z. B. einer Energieverbrauchsüberwachung und einer umweltfreundlichen Routenplaner-App.</p>
         </div>
-        <a href="#contact" class="btn">Kontakt aufnehmen</a>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Meine Fähigkeiten</h2>
-        <div class="skill-bar">
-            <span>HTML & CSS</span>
-            <div class="progress">
-                <div class="progress-fill" style="width: 90%;"></div>
-            </div>
-        </div>
-        <div class="skill-bar">
-            <span>JavaScript</span>
-            <div class="progress">
-                <div class="progress-fill" style="width: 80%;"></div>
-            </div>
-        </div>
-        <div class="skill-bar">
-            <span>Python</span>
-            <div class="progress">
-                <div class="progress-fill" style="width: 75%;"></div>
-            </div>
+    <section id="skills">
+        <div class="container">
+            <h2>Meine Fähigkeiten</h2>
+            <div class="progress-bar" style="width: 80%">HTML & CSS</div>
+            <div class="progress-bar" style="width: 70%">JavaScript</div>
+            <div class="progress-bar" style="width: 60%">React</div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Meine Projekte</h2>
-        <div class="project-grid">
+    <section id="projects">
+        <div class="container">
+            <h2>Meine Projekte</h2>
             <div class="project-card">
-                <h3>Stromverbrauchs-Tracker</h3>
-                <p>Ein Projekt zur Überwachung des Stromverbrauchs in Echtzeit, ideal für Haushalte und kleine Gemeinden.</p>
-                <a href="https://github.com/scheinremdy/energy-consumption" target="_blank" class="btn">Code auf GitHub</a>
+                <img src="https://via.placeholder.com/400x250" alt="Energy Consumption Project">
+                <div class="project-details">
+                    <h3>Energy Consumption Tracker</h3>
+                    <p>Verfolgen Sie den Energieverbrauch in Echtzeit und optimieren Sie den Stromverbrauch für umweltfreundliche Lösungen.</p>
+                    <a href="https://github.com/scheinremdy/energy-consumption" target="_blank">Code ansehen</a>
+                </div>
             </div>
             <div class="project-card">
-                <h3>Wetter-App</h3>
-                <p>Eine benutzerfreundliche App, die Wettervorhersagen liefert und eine elegante Benutzeroberfläche hat.</p>
-                <a href="https://github.com/scheinremdy/weather2.2" target="_blank" class="btn">Code auf GitHub</a>
+                <img src="https://via.placeholder.com/400x250" alt="Weather App">
+                <div class="project-details">
+                    <h3>Wetter App</h3>
+                    <p>Eine wetterbasierte App, die präzise Wettervorhersagen liefert.</p>
+                    <a href="https://github.com/scheinremdy/weather2.2" target="_blank">Code ansehen</a>
+                </div>
             </div>
             <div class="project-card">
-                <h3>IoT-basierter Energie-Monitor</h3>
-                <p>Ein IoT-System zur Fernüberwachung und Optimierung des Energieverbrauchs.</p>
-                <a href="https://github.com/scheinremdy/Iot-Based-Energy-Monitor" target="_blank" class="btn">Code auf GitHub</a>
-            </div>
-            <div class="project-card">
-                <h3>Umweltfreundlicher Routenplaner</h3>
-                <p>Ein innovativer Routenplaner, der nachhaltige Transportmittel wie Bus, Fahrrad oder zu Fuß vorschlägt.</p>
-                <a href="https://github.com/scheinremdy/eco-route-2" target="_blank" class="btn">Code auf GitHub</a>
+                <img src="https://via.placeholder.com/400x250" alt="IoT Energy Monitor">
+                <div class="project-details">
+                    <h3>IoT-basiertes Energie-Monitoring</h3>
+                    <p>Ein IoT-Überwachungssystem für den Energieverbrauch mit einer benutzerfreundlichen Schnittstelle.</p>
+                    <a href="https://github.com/scheinremdy/Iot-Based-Energy-Monitor" target="_blank">Code ansehen</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Kontakt</h2>
-        <div class="contact-info">
-            <a href="mailto:scheinremdy@gmail.com" class="contact-item">
-                <i class="fas fa-envelope"></i> E-Mail senden
-            </a>
-            <a href="https://github.com/scheinremdy" class="contact-item">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://linkedin.com/in/sunshine-remollo" class="contact-item">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
+    <section id="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Interessiert an einer Zusammenarbeit? Kontaktieren Sie mich über die folgenden Links:</p>
+            <div class="social-links">
+                <a href="https://github.com/scheinremdy" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/scheinremdy" target="_blank">LinkedIn</a>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
-    </footer>
-
-    <!-- FontAwesome CDN for Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
