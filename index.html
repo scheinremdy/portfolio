@@ -1,112 +1,64 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunshine Remollo - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunshine Remollo - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="logo">Sunshine's Portfolio</div>
-            <ul>
-                <li><a href="#about-me">Über mich</a></li>
-                <li><a href="#projects">Projekte</a></li>
-                <li><a href="#tech-stack">Technologie-Stack</a></li>
-                <li><a href="#coding-challenges">Coding Challenges</a></li>
-                <li><a href="#learning-progress">Lernfortschritt</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-            <button id="theme-toggle">🌙</button>
-        </nav>
-    </header>
+  <header>
+    <h1>Sunshine Remollo</h1>
+    <nav>
+      <button id="theme-toggle">🌙 Dark Mode</button>
+      <a href="#who-am-i">Wer bin ich?</a>
+      <a href="#projects">Projekte</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
 
-    <section id="about-me">
-        <h2>Willkommen in meinem Portfolio!</h2>
-        <p>Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus Kiamba Sarangani Province auf den Philippinen...</p>
-        <p>Mein Ziel ist es, in einem IT-Unternehmen zu arbeiten, das die Digitalisierung vorantreibt...</p>
-    </section>
+  <section id="who-am-i">
+    <h2>Wer bin ich?</h2>
+    <p>
+      Willkommen in meinem Portfolio! Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus Kiamba, Sarangani Province auf den Philippinen. 
+      Schon als Kind hatte ich großes Interesse an der digitalen Welt. Meine Reise in die IT-Welt begann durch kostenlose Online-Kurse und 
+      selbstständiges Lernen.
+    </p>
+  </section>
 
-    <section id="projects">
-        <h2>Projekte</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <h3>Wetter-App</h3>
-                <p>Diese App zeigt präzise Wetterdaten in Echtzeit für verschiedene Städte weltweit an...</p>
-                <p>Durch die Nutzung einer API konnte ich Daten dynamisch abrufen und darstellen...</p>
-                <p>Dieses Projekt hat meine Fähigkeiten in der API-Integration erheblich verbessert.</p>
-                <a href="https://github.com/yourrepo/weather-app" target="_blank">GitHub Repository</a>
-            </div>
-            <div class="project-card">
-                <h3>Stromverbrauchs-Website</h3>
-                <p>Eine interaktive Plattform, die es Nutzern ermöglicht, ihren Stromverbrauch zu überwachen...</p>
-                <p>Ich habe Funktionen wie Diagrammerstellung und monatliche Verbrauchsberichte implementiert...</p>
-                <p>Es war eine großartige Gelegenheit, Datenvisualisierung zu lernen.</p>
-                <a href="https://github.com/yourrepo/power-consumption" target="_blank">GitHub Repository</a>
-            </div>
-            <div class="project-card">
-                <h3>Umweltfreundlicher Routenplaner</h3>
-                <p>Planen Sie nachhaltige Reisen durch öffentliche Verkehrsmittel, Fahrräder oder zu Fuß...</p>
-                <p>Die App bietet interaktive Karten und Echtzeit-Verkehrsberichte...</p>
-                <p>Ich habe dabei die Bedeutung der Benutzerfreundlichkeit in der UI gelernt.</p>
-                <a href="https://github.com/yourrepo/eco-route-planner" target="_blank">GitHub Repository</a>
-            </div>
-        </div>
-    </section>
+  <section id="projects">
+    <h2>Projekte</h2>
+    <div class="project">
+      <h3>Wetter-App</h3>
+      <p>Eine interaktive Wetter-Anwendung, die aktuelle Wetterdaten liefert. Herausforderung: Das Einbinden einer API und dynamisches Aktualisieren 
+      der Daten. Lösung: Optimierung durch asynchrone JavaScript-Aufrufe.</p>
+    </div>
+    <div class="project">
+      <h3>Elektrische Verbrauchs-Tracker</h3>
+      <p>Eine Website zur Überwachung des Energieverbrauchs kleiner Gemeinden. Herausforderung: Datenbankerstellung und Echtzeitberichte. Lösung: 
+      Implementierung von MySQL und Diagrammbibliotheken.</p>
+    </div>
+    <div class="project">
+      <h3>Umweltfreundlicher Routenplaner</h3>
+      <p>Ein umweltfreundlicher Google-Maps-Klon, der nachhaltige Routenoptionen wie ÖPNV, Fahrrad oder zu Fuß vorschlägt. Herausforderung: Benutzerfreundliche Oberfläche und Lokalisierungsfunktion. Lösung: Responsive Design mit moderner API-Integration.</p>
+    </div>
+  </section>
 
-    <section id="tech-stack">
-        <h2>Technologie-Stack</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React.js, Node.js</li>
-            <li>MongoDB, MySQL</li>
-            <li>Python, Django</li>
-            <li>Git, GitHub</li>
-        </ul>
-    </section>
+  <section id="learning-progress">
+    <h2>Lernfortschritt</h2>
+    <p>Ich lerne durch kostenlose Online-Kurse wie Google und edX, um mein Wissen zu erweitern und neue Technologien zu entdecken.</p>
+  </section>
 
-    <section id="coding-challenges">
-        <h2>Coding Challenges</h2>
-        <div class="challenge-container">
-            <div class="challenge-card">
-                <h3>Woche 1: Fibonacci-Folge</h3>
-                <p>Die Herausforderung bestand darin, eine effiziente rekursive Funktion für die Fibonacci-Folge zu erstellen...</p>
-                <p>Ich habe gelernt, die Berechnungen zu optimieren und Speicherplatz zu reduzieren...</p>
-                <p>Dieses Problem hat meine Fähigkeit verbessert, Probleme systematisch anzugehen.</p>
-            </div>
-            <div class="challenge-card">
-                <h3>Woche 2: Optimierung eines Sortieralgorithmus</h3>
-                <p>Ein langsamer Bubble Sort-Algorithmus war nicht effizient genug für große Datensätze...</p>
-                <p>Ich habe Merge Sort implementiert und die Leistung um 70% verbessert...</p>
-                <p>Es war faszinierend, algorithmische Denkweisen zu entwickeln.</p>
-            </div>
-        </div>
-    </section>
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>📱 WhatsApp: <a href="https://wa.me/639266884277" target="_blank">+63 926 688 4277</a></p>
+    <p>📧 E-Mail: <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a></p>
+  </section>
 
-    <section id="learning-progress">
-        <h2>Lernfortschritt</h2>
-        <p>Ich lerne aktiv durch kostenlose Online-Kurse wie Google IT Support und edX Web Development...</p>
-        <ul>
-            <li>Google IT Support</li>
-            <li>edX Web Development</li>
-            <li>FreeCodeCamp JavaScript</li>
-        </ul>
-    </section>
+  <footer>
+    <p>© 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
+  </footer>
 
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p><strong>WhatsApp:</strong> +639266884277</p>
-        <p><strong>Email:</strong> remolloschein@gmail.com</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Sunshine Remollo</p>
-    </footer>
-
-    <script src="scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
-
 </html>
