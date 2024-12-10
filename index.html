@@ -1,84 +1,100 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunshine Remollo - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunshine Remollo Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+  <!-- Dark Mode Toggle -->
+  <button id="dark-mode-toggle">🌙</button>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Willkommen in meinem Portfolio!</h1>
-            <p>Ich bin Sunshine Remollo, 19 Jahre alt und leidenschaftlich daran interessiert, die digitale Welt zu gestalten.</p>
-            <button id="dark-mode-toggle">🌙 Dunkelmodus</button>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Willkommen in meinem Portfolio</h1>
+    <p>Ich heiße Sunshine Remollo, und dies ist mein Weg in die IT-Welt.</p>
+    <a href="#projects" class="cta">Meine Projekte ansehen</a>
+  </header>
 
-    <!-- About Me Section -->
-    <section id="about-me">
-        <div class="container">
-            <h2>Wer bin ich?</h2>
-            <p>Ich bin ein junger Entwickler aus General Santos City, Philippinen. Mit einer Leidenschaft für Technologie habe ich viele meiner Fähigkeiten durch selbstständiges Lernen und kostenlose Online-Kurse erworben.</p>
-            <p>Ich habe an Projekten gearbeitet, die Nachhaltigkeit fördern, wie z. B. einer Energieverbrauchsüberwachung und einer umweltfreundlichen Routenplaner-App.</p>
-        </div>
-    </section>
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>Über Mich</h2>
+    <p>
+      Ich bin 19 Jahre alt und komme aus General Santos City, Philippinen. 
+      Meine Leidenschaft für die IT begann früh, obwohl der Zugang zu Computern begrenzt war. 
+      Durch Online-Kurse und eigenständiges Lernen konnte ich Apps wie eine Wetter-App und eine 
+      umweltfreundliche Routenplaner-App entwickeln.
+    </p>
+    <p>
+      Neben der Technologie spiele ich leidenschaftlich Tennis, was mir Disziplin und Ausdauer 
+      beigebracht hat. Mein Ziel ist es, mein Wissen in einem IT-Unternehmen zu erweitern und 
+      innovative Lösungen zu schaffen.
+    </p>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Meine Fähigkeiten</h2>
-            <div class="progress-bar" style="width: 80%">HTML & CSS</div>
-            <div class="progress-bar" style="width: 70%">JavaScript</div>
-            <div class="progress-bar" style="width: 60%">React</div>
-        </div>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Fähigkeiten</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <h3>HTML & CSS</h3>
+        <div class="progress-bar" style="width: 85%;">85%</div>
+      </div>
+      <div class="skill">
+        <h3>JavaScript</h3>
+        <div class="progress-bar" style="width: 75%;">75%</div>
+      </div>
+      <div class="skill">
+        <h3>Python</h3>
+        <div class="progress-bar" style="width: 70%;">70%</div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Meine Projekte</h2>
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x250" alt="Energy Consumption Project">
-                <div class="project-details">
-                    <h3>Energy Consumption Tracker</h3>
-                    <p>Verfolgen Sie den Energieverbrauch in Echtzeit und optimieren Sie den Stromverbrauch für umweltfreundliche Lösungen.</p>
-                    <a href="https://github.com/scheinremdy/energy-consumption" target="_blank">Code ansehen</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x250" alt="Weather App">
-                <div class="project-details">
-                    <h3>Wetter App</h3>
-                    <p>Eine wetterbasierte App, die präzise Wettervorhersagen liefert.</p>
-                    <a href="https://github.com/scheinremdy/weather2.2" target="_blank">Code ansehen</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x250" alt="IoT Energy Monitor">
-                <div class="project-details">
-                    <h3>IoT-basiertes Energie-Monitoring</h3>
-                    <p>Ein IoT-Überwachungssystem für den Energieverbrauch mit einer benutzerfreundlichen Schnittstelle.</p>
-                    <a href="https://github.com/scheinremdy/Iot-Based-Energy-Monitor" target="_blank">Code ansehen</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projekte</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Wetter-App</h3>
+        <p>Eine App zur Anzeige aktueller Wetterdaten.</p>
+        <a href="https://github.com/scheinremdy/weather2.2" target="_blank" class="btn">Projekt ansehen</a>
+      </div>
+      <div class="project">
+        <h3>Stromverbrauch-Tracker</h3>
+        <p>Eine Website zur Überwachung des Stromverbrauchs in Haushalten.</p>
+        <a href="https://github.com/scheinremdy/energy-consumption" target="_blank" class="btn">Projekt ansehen</a>
+      </div>
+      <div class="project">
+        <h3>IoT-basiertes Energie-Monitoring</h3>
+        <p>Ein System zur Echtzeitüberwachung von Energieverbrauch.</p>
+        <a href="https://github.com/scheinremdy/Iot-Based-Energy-Monitor" target="_blank" class="btn">Projekt ansehen</a>
+      </div>
+      <div class="project">
+        <h3>Umweltfreundlicher Routenplaner</h3>
+        <p>Eine App zur Auswahl nachhaltiger Reisemöglichkeiten.</p>
+        <a href="https://github.com/scheinremdy/eco-route-2" target="_blank" class="btn">Projekt ansehen</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Kontakt</h2>
-            <p>Interessiert an einer Zusammenarbeit? Kontaktieren Sie mich über die folgenden Links:</p>
-            <div class="social-links">
-                <a href="https://github.com/scheinremdy" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/scheinremdy" target="_blank">LinkedIn</a>
-            </div>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>Ich freue mich auf Ihre Nachricht!</p>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a></p>
+      <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/639266884277" target="_blank">+639266884277</a></p>
+      <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/scheinremdy" target="_blank">scheinremdy</a></p>
+    </div>
+  </section>
 
+  <footer>
+    <p>&copy; 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
