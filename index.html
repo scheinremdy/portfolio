@@ -1,82 +1,76 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunshine Remollo - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Remollo Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Sunshine Remollo</h1>
-    <nav>
-      <button id="theme-toggle">🌙 Dark Mode</button>
-      <a href="#who-am-i">Über Mich</a>
-      <a href="#projects">Projekte</a>
-      <a href="#contact">Kontakt</a>
-    </nav>
-  </header>
+    <header>
+        <div class="theme-toggle">
+            <label for="theme-switch">🌙 / ☀️</label>
+            <input type="checkbox" id="theme-switch" />
+        </div>
+        <h1>Sunshine Remollo</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Über Mich</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="who-am-i">
-    <h2>Über Mich</h2>
-    <p>
-      Willkommen in meinem Portfolio! Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus Kiamba, Sarangani Province auf den Philippinen. 
-      Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. Das hat mich aber nicht abgehalten. Im Gegenteil, es hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.
-    </p>
-    <p>
-      Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich zum Beispiel eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für die Digitalisierung und innovative Lösungen zu vertiefen.
-    </p>
-    <p>
-      Neben meiner Leidenschaft für Technologie spiele ich auch Tennis. Als Varsity-Spielerin hatte ich das Glück, eine kostenlose Bildung zu bekommen, was mir geholfen hat, sowohl akademisch als auch persönlich zu wachsen. Der Sport hat mir Disziplin und Ausdauer beigebracht – Werte, die ich in allen Bereichen meines Lebens, auch in meiner Arbeit, einsetze.
-    </p>
-    <p>
-      Außerdem habe ich praktische Erfahrung als Verwaltungsassistentin in einem Stromversorgungsunternehmen gesammelt. Diese Tätigkeit hat meine organisatorischen Fähigkeiten gestärkt und mir gezeigt, wie wichtig nachhaltige Lösungen in der Energieversorgung sind. Mein Ziel ist es, in einem IT-Unternehmen zu arbeiten, das die Digitalisierung vorantreibt und eine Kultur der Vielfalt sowie des Lernens fördert.
-    </p>
-  </section>
+    <main>
+        <!-- Über Mich Section -->
+        <section id="about">
+            <h2>Wer bin ich?</h2>
+            <p>
+                Willkommen in meinem Portfolio! Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus Kiamba, Sarangani Province, auf den Philippinen. Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. Das hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.
+            </p>
+            <p>
+                Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich z. B. eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für Digitalisierung und innovative Lösungen zu vertiefen.
+            </p>
+            <p>
+                Neben meiner Leidenschaft für Technologie spiele ich Tennis. Als Varsity-Spielerin hatte ich das Glück, eine kostenlose Bildung zu bekommen, was mir geholfen hat, sowohl akademisch als auch persönlich zu wachsen. Der Sport hat mir Disziplin und Ausdauer beigebracht – Werte, die ich in allen Bereichen meines Lebens einsetze.
+            </p>
+        </section>
 
-  <section id="projects">
-    <h2>Projekte</h2>
-    <div class="project">
-      <h3>Wetter-App</h3>
-      <p>
-        Diese App zeigt die aktuelle Wetterlage an, einschließlich Temperatur, Wind und Wettervorhersagen. 
-        <strong>Herausforderung:</strong> Ich hatte Schwierigkeiten, Daten aus einer API zu laden und benutzerfreundlich darzustellen. 
-        <strong>Lösung:</strong> Durch den Einsatz von asynchronem JavaScript (Fetch API) konnte ich Daten effizient abrufen und visualisieren.
-      </p>
-    </div>
-    <div class="project">
-      <h3>Elektrische Verbrauchs-Tracker</h3>
-      <p>
-        Ein System zur Überwachung des Energieverbrauchs kleiner Gemeinden mit Visualisierungen.
-        <strong>Herausforderung:</strong> Die Integration von Datenbanken und die Erstellung dynamischer Diagramme war komplex. 
-        <strong>Lösung:</strong> Ich habe MySQL für die Speicherung genutzt und Diagramme mit Chart.js erstellt, um Verbrauchsdaten in Echtzeit darzustellen.
-      </p>
-    </div>
-    <div class="project">
-      <h3>Umweltfreundlicher Routenplaner</h3>
-      <p>
-        Eine interaktive Karte, die nachhaltige Reisemöglichkeiten wie ÖPNV, Fahrradfahren und Fußwege vorschlägt.
-        <strong>Herausforderung:</strong> Die Lokalisierungsfunktion und das Design für verschiedene Geräte. 
-        <strong>Lösung:</strong> Ich habe responsive Design-Techniken und Geolocation-APIs verwendet, um eine benutzerfreundliche Oberfläche zu schaffen.
-      </p>
-    </div>
-  </section>
+        <!-- Projekte Section -->
+        <section id="projects">
+            <h2>Projekte</h2>
+            <div class="project">
+                <h3>Wetter-App</h3>
+                <p>
+                    Eine benutzerfreundliche App, die Echtzeit-Wetterdaten liefert. Herausforderungen: Die Integration einer zuverlässigen API war schwierig. Lösung: Ich habe OpenWeatherMap verwendet und optimiert, um genaue Daten zu erhalten. Lektion: API-Dokumentationen sorgfältig lesen.
+                </p>
+            </div>
+            <div class="project">
+                <h3>Stromverbrauchs-Tracker</h3>
+                <p>
+                    Eine Website zur Überwachung des Stromverbrauchs für kleine Gemeinden. Herausforderungen: Die Berechnung des durchschnittlichen Verbrauchs war komplex. Lösung: Implementierung eines dynamischen Algorithmus. Lektion: Datenstrukturen verbessern.
+                </p>
+            </div>
+            <div class="project">
+                <h3>Umweltfreundlicher Routenplaner</h3>
+                <p>
+                    Eine App, die nachhaltige Reiseoptionen vorschlägt. Herausforderungen: Benutzerstandort zu erkennen. Lösung: GPS-basierte JavaScript-API. Lektion: Geo-Tools effizient nutzen.
+                </p>
+            </div>
+        </section>
 
-  <section id="learning-progress">
-    <h2>Lernfortschritt</h2>
-    <p>Ich erweitere mein Wissen durch kostenlose Online-Kurse, darunter Google-Zertifizierungen und edX-Kurse.</p>
-  </section>
+        <!-- Kontakt Section -->
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>WhatsApp: <a href="https://wa.me/639266884277">+63 926 688 4277</a></p>
+            <p>Email: <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a></p>
+        </section>
+    </main>
 
-  <section id="contact">
-    <h2>Kontakt</h2>
-    <p>📱 WhatsApp: <a href="https://wa.me/639266884277" target="_blank">+63 926 688 4277</a></p>
-    <p>📧 E-Mail: <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a></p>
-  </section>
-
-  <footer>
-    <p>© 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
-  </footer>
-
-  <script src="scripts.js"></script>
+    <footer>
+        <p>© 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
+    </footer>
 </body>
 </html>
