@@ -1,2 +1,7 @@
-// Optional: Add animations or interactivity later
-console.log("Portfolio loaded successfully!");
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  themeToggle.textContent = document.body.classList.contains('dark-mode')
+    ? '☀️ Light Mode'
+    : '🌙 Dark Mode';
+});
