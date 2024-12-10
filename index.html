@@ -3,74 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunshine Remollo Portfolio</title>
+    <title>Sunshine Remollo's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <header>
-        <div class="theme-toggle">
-            <label for="theme-switch">🌙 / ☀️</label>
-            <input type="checkbox" id="theme-switch" />
-        </div>
-        <h1>Sunshine Remollo</h1>
-        <nav>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <h1>Willkommen zu meinem Portfolio!</h1>
             <ul>
-                <li><a href="#about">Über Mich</a></li>
+                <li><a href="#about">Wer bin ich?</a></li>
                 <li><a href="#projects">Projekte</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
+                <li><a href="#learning-progress">Lernfortschritt</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <!-- Über Mich Section -->
-        <section id="about">
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-container">
+            <h2>Ich heiße Sunshine Remollo</h2>
+            <p>Ich bin 19 Jahre alt und komme aus General Santos City, Philippinen. Hier teile ich meine Reise durch die digitale Welt.</p>
+            <button onclick="scrollToAbout()">Mehr erfahren</button>
+        </div>
+    </section>
+
+    <!-- Wer bin ich? -->
+    <section id="about">
+        <div class="container">
             <h2>Wer bin ich?</h2>
-            <p>
-                Willkommen in meinem Portfolio! Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus Kiamba, Sarangani Province, auf den Philippinen. Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. Das hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.
-            </p>
-            <p>
-                Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich z. B. eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für Digitalisierung und innovative Lösungen zu vertiefen.
-            </p>
-            <p>
-                Neben meiner Leidenschaft für Technologie spiele ich Tennis. Als Varsity-Spielerin hatte ich das Glück, eine kostenlose Bildung zu bekommen, was mir geholfen hat, sowohl akademisch als auch persönlich zu wachsen. Der Sport hat mir Disziplin und Ausdauer beigebracht – Werte, die ich in allen Bereichen meines Lebens einsetze.
-            </p>
-        </section>
+            <p>Schon als Kind hatte ich großes Interesse an der digitalen Welt. Auf den Philippinen war der Zugang zu Computern nicht selbstverständlich, aber das hat mich nur motiviert, mehr zu lernen.</p>
+            <p>Ich habe durch kostenlose Online-Kurse viel erreicht, darunter Projekte wie eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App.</p>
+            <p>Ich glaube an die Kraft der Technologie, um den Alltag der Menschen zu verbessern und Lösungen für eine nachhaltigere Zukunft zu schaffen.</p>
+        </div>
+    </section>
 
-        <!-- Projekte Section -->
-        <section id="projects">
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
             <h2>Projekte</h2>
-            <div class="project">
-                <h3>Wetter-App</h3>
-                <p>
-                    Eine benutzerfreundliche App, die Echtzeit-Wetterdaten liefert. Herausforderungen: Die Integration einer zuverlässigen API war schwierig. Lösung: Ich habe OpenWeatherMap verwendet und optimiert, um genaue Daten zu erhalten. Lektion: API-Dokumentationen sorgfältig lesen.
-                </p>
+            <p>Hier sind einige meiner neuesten Projekte:</p>
+            <div class="project-showcase">
+                <div class="project">
+                    <img src="weather-app.png" alt="Wetter-App">
+                    <h3>Wetter-App</h3>
+                    <p>Eine Anwendung, die es den Nutzern ermöglicht, das aktuelle Wetter in ihrer Region zu überprüfen.</p>
+                    <a href="#">Projekt ansehen</a>
+                </div>
+                <div class="project">
+                    <img src="energy-monitor.png" alt="Stromverbrauch-Website">
+                    <h3>Stromverbrauch-Website</h3>
+                    <p>Eine interaktive Website zur Überwachung des Stromverbrauchs in kleinen Gemeinden.</p>
+                    <a href="#">Projekt ansehen</a>
+                </div>
+                <div class="project">
+                    <img src="eco-route-planner.png" alt="Umweltfreundlicher Routenplaner">
+                    <h3>Umweltfreundlicher Routenplaner</h3>
+                    <p>Ein interaktiver Routenplaner, der umweltfreundliche Reisemöglichkeiten vorschlägt.</p>
+                    <a href="#">Projekt ansehen</a>
+                </div>
             </div>
-            <div class="project">
-                <h3>Stromverbrauchs-Tracker</h3>
-                <p>
-                    Eine Website zur Überwachung des Stromverbrauchs für kleine Gemeinden. Herausforderungen: Die Berechnung des durchschnittlichen Verbrauchs war komplex. Lösung: Implementierung eines dynamischen Algorithmus. Lektion: Datenstrukturen verbessern.
-                </p>
-            </div>
-            <div class="project">
-                <h3>Umweltfreundlicher Routenplaner</h3>
-                <p>
-                    Eine App, die nachhaltige Reiseoptionen vorschlägt. Herausforderungen: Benutzerstandort zu erkennen. Lösung: GPS-basierte JavaScript-API. Lektion: Geo-Tools effizient nutzen.
-                </p>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Kontakt Section -->
-        <section id="contact">
-            <h2>Kontakt</h2>
-            <p>WhatsApp: <a href="https://wa.me/639266884277">+63 926 688 4277</a></p>
-            <p>Email: <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a></p>
-        </section>
-    </main>
+    <!-- Tech Stack Section -->
+    <section id="tech-stack">
+        <div class="container">
+            <h2>Tech Stack</h2>
+            <p>Die Technologien, mit denen ich arbeite:</p>
+            <div class="tech-list">
+                <div class="tech">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="tech">
+                    <i class="fas fa-database"></i>
+                    <h3>Backend</h3>
+                    <p>Node.js, Express, MongoDB</p>
+                </div>
+                <div class="tech">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud</h3>
+                    <p>AWS, Firebase</p>
+                </div>
+                <div class="tech">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Tools</h3>
+                    <p>Git, GitHub, VS Code</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects Description and Coding Challenges -->
+    <section id="projects-description">
+        <div class="container">
+            <h2>Projektbeschreibungen und Herausforderungen</h2>
+            <p>Hier sind einige Herausforderungen, die ich in meinen Projekten gemeistert habe, und wie ich sie gelöst habe:</p>
+            <article>
+                <h3>Wetter-App - Herausforderung</h3>
+                <p>Die größte Herausforderung war die Integration einer zuverlässigen Wetter-API. Durch die Auswahl einer besseren API und das Hinzufügen von Fehlerbehandlungsmechanismen konnte ich das Problem erfolgreich lösen.</p>
+                <p>Gelernte Lektionen: API-Integration, Fehlerbehandlung und benutzerfreundliches Design.</p>
+            </article>
+            <article>
+                <h3>Stromverbrauch-Website - Herausforderung</h3>
+                <p>Die größte Herausforderung war die Visualisierung von Daten für verschiedene Benutzer. Ich habe mich für eine dynamische Diagramm-Darstellung entschieden, um den Nutzern eine einfach zu verstehende Darstellung zu bieten.</p>
+                <p>Gelernte Lektionen: Datenvisualisierung, benutzerzentriertes Design und effiziente Nutzung von Bibliotheken wie Chart.js.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Learning Progress Section -->
+    <section id="learning-progress">
+        <div class="container">
+            <h2>Lernfortschritt</h2>
+            <p>Ich lerne kontinuierlich durch kostenlose Online-Kurse, wie z. B. Google und edX Kurse. Ich habe meine Fähigkeiten in den Bereichen Programmierung, Webentwicklung und Design ständig erweitert.</p>
+            <ul>
+                <li>Google Web Development Zertifikat</li>
+                <li>edX Kurse zu Cloud-Computing und Datenbanken</li>
+                <li>Coursera Kurse zu JavaScript und React</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
+        <div class="container">
+            <p>&copy; 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
+
+    <!-- JavaScript for Dark Mode Toggle -->
+    <script>
+        const darkModeToggle = document.createElement("button");
+        darkModeToggle.innerText = "Dark Mode";
+        document.body.appendChild(darkModeToggle);
+        
+        darkModeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+
+        function scrollToAbout() {
+            document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
 </body>
 </html>
+
+<style>
+    /* General Styling */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    h2 {
+        color: #333;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .project-showcase {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .project {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        flex: 1;
+    }
+
+    .project img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .tech-list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tech {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        width: 22%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .tech i {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .tech h3 {
+        color: #333;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    /* Dark Mode Styling */
+    .dark-mode {
+        background-color: #121212;
+        color: white;
+    }
+
+    .dark-mode nav {
+        background-color: #222;
+    }
+
+    .dark-mode .project-showcase .project {
+        background-color: #333;
+        color: white;
+    }
+
+    .dark-mode .tech {
+        background-color: #333;
+        color: white;
+    }
+
+    /* Button for Dark Mode */
+    button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    button:hover {
+        background-color: #555;
+    }
+</style>
