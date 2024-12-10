@@ -3,84 +3,34 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #E0E0E0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
 }
 
-a {
-    color: #00B0FF;
-    text-decoration: none;
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
 }
 
-a:hover {
-    text-decoration: underline;
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #E0E0E0;
 }
 
+/* Header */
 header {
-    background-color: #1F1F1F;
-    padding: 20px;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-h2, h3 {
-    color: #E0E0E0;
-}
-
-/* Section Styles */
-section {
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    background-color: #2A2A2A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--bg-color);
 }
 
 /* Project Showcase */
-.project-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .project-card {
-    background-color: #333;
+    margin: 20px;
     padding: 15px;
-    margin: 10px;
-    border-radius: 8px;
-    width: 30%;
-}
-
-.project-card h3 {
-    color: #00B0FF;
-}
-
-.challenge-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.challenge-card {
-    background-color: #444;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 8px;
-    width: 30%;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #1F1F1F;
-    color: #B0B0B0;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
 }
