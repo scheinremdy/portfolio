@@ -1,52 +1,47 @@
-/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-h1, h2, h3 {
-  text-align: center;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.hero {
-  background: linear-gradient(to bottom, #6fb1fc, #4364f7);
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-.cta {
-  text-decoration: none;
-  color: white;
-  background-color: #f76c6c;
-  padding: 10px 20px;
-  border-radius: 5px;
+header p {
+    line-height: 1.6;
+    margin: 10px 0;
 }
 
-#skills .progress-bar {
-  background-color: #6fb1fc;
-  height: 20px;
-  margin: 10px 0;
+#projects .project {
+    margin: 20px 0;
 }
 
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+#projects a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.project {
-  border: 1px solid #ddd;
-  padding: 20px;
-  width: 45%;
-  margin: 10px;
-  text-align: center;
+#dark-mode-toggle {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #f1f1f1;
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
 }
