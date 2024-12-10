@@ -63,8 +63,25 @@ nav ul li a:hover {
 }
 
 .about-section h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 30px;
 }
 
 .about-section p {
@@ -102,19 +119,17 @@ nav ul li a:hover {
 
 .project p {
     font-size: 1.1em;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .project .button {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 20px;
     background-color: #007BFF;
     color: #fff;
+    padding: 10px 20px;
     border-radius: 5px;
-    text-transform: uppercase;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+    margin: 10px 5px;
+    display: inline-block;
 }
 
 .project .button:hover {
@@ -130,63 +145,25 @@ nav ul li a:hover {
 
 .contact-section h2 {
     font-size: 2.5em;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .contact-item {
-    display: inline-block;
-    margin: 20px;
-    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 .contact-item i {
-    font-size: 40px; /* Font Awesome icon size */
-    margin-bottom: 10px;
-    color: #007BFF; /* Icon color */
+    font-size: 1.8em;
+    margin-right: 15px;
 }
 
 .contact-item a {
+    color: #007BFF;
     font-size: 1.2em;
-    color: #333;
     text-decoration: none;
 }
 
 .contact-item a:hover {
-    color: #007BFF;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2em;
-    }
-
-    .header p {
-        font-size: 1em;
-    }
-
-    .projects-section {
-        padding: 30px 10px;
-    }
-
-    .project {
-        margin-bottom: 20px;
-        padding: 15px;
-    }
-
-    .project h3 {
-        font-size: 1.5em;
-    }
-
-    .project p {
-        font-size: 1em;
-    }
-
-    .contact-item i {
-        font-size: 35px;
-    }
-
-    .contact-item a {
-        font-size: 1em;
-    }
+    color: #0056b3;
 }
