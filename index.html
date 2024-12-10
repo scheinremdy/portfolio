@@ -1,291 +1,225 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunshine Remollo's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Shine's Interactive Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00bfff, #005f6b);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-message {
+            font-size: 1.5em;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out 1s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #222;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            transition: background-color 0.3s;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 50px 20px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-card .details {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project-card .details h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .project-card .details p {
+            color: #555;
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 50px 20px;
+            background-color: #e4e4e4;
+            text-align: center;
+        }
+
+        .skills h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .skills .skill-bar {
+            background-color: #ddd;
+            border-radius: 25px;
+            overflow: hidden;
+            height: 30px;
+            margin: 10px 0;
+        }
+
+        .skills .skill-bar span {
+            display: block;
+            height: 100%;
+            background-color: #00bfff;
+            width: 0;
+            animation: load 2s forwards;
+        }
+
+        @keyframes load {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 2em;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #00bfff;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
-        <div class="container">
-            <h1>Willkommen zu meinem Portfolio!</h1>
-            <ul>
-                <li><a href="#about">Wer bin ich?</a></li>
-                <li><a href="#projects">Projekte</a></li>
-                <li><a href="#tech-stack">Tech Stack</a></li>
-                <li><a href="#learning-progress">Lernfortschritt</a></li>
-            </ul>
+    <header>
+        <h1>Welcome to My Interactive Portfolio!</h1>
+        <div class="hero-message">
+            <p>Hi, I'm Shine Remollo. A Filipino tech enthusiast passionate about IT development and innovation.</p>
         </div>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-container">
-            <h2>Ich heiße Sunshine Remollo</h2>
-            <p>Ich bin 19 Jahre alt und komme aus General Santos City, Philippinen. Hier teile ich meine Reise durch die digitale Welt.</p>
-            <button onclick="scrollToAbout()">Mehr erfahren</button>
+    <section id="projects" class="projects">
+        <div class="project-card">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="details">
+                <h3>Project One</h3>
+                <p>A brief description of this amazing project...</p>
+            </div>
         </div>
-    </section>
 
-    <!-- Wer bin ich? -->
-    <section id="about">
-        <div class="container">
-            <h2>Wer bin ich?</h2>
-            <p>Schon als Kind hatte ich großes Interesse an der digitalen Welt. Auf den Philippinen war der Zugang zu Computern nicht selbstverständlich, aber das hat mich nur motiviert, mehr zu lernen.</p>
-            <p>Ich habe durch kostenlose Online-Kurse viel erreicht, darunter Projekte wie eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App.</p>
-            <p>Ich glaube an die Kraft der Technologie, um den Alltag der Menschen zu verbessern und Lösungen für eine nachhaltigere Zukunft zu schaffen.</p>
+        <div class="project-card">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="details">
+                <h3>Project Two</h3>
+                <p>Another awesome project description...</p>
+            </div>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projekte</h2>
-            <p>Hier sind einige meiner neuesten Projekte:</p>
-            <div class="project-showcase">
-                <div class="project">
-                    <img src="weather-app.png" alt="Wetter-App">
-                    <h3>Wetter-App</h3>
-                    <p>Eine Anwendung, die es den Nutzern ermöglicht, das aktuelle Wetter in ihrer Region zu überprüfen.</p>
-                    <a href="#">Projekt ansehen</a>
-                </div>
-                <div class="project">
-                    <img src="energy-monitor.png" alt="Stromverbrauch-Website">
-                    <h3>Stromverbrauch-Website</h3>
-                    <p>Eine interaktive Website zur Überwachung des Stromverbrauchs in kleinen Gemeinden.</p>
-                    <a href="#">Projekt ansehen</a>
-                </div>
-                <div class="project">
-                    <img src="eco-route-planner.png" alt="Umweltfreundlicher Routenplaner">
-                    <h3>Umweltfreundlicher Routenplaner</h3>
-                    <p>Ein interaktiver Routenplaner, der umweltfreundliche Reisemöglichkeiten vorschlägt.</p>
-                    <a href="#">Projekt ansehen</a>
-                </div>
+        <div class="project-card">
+            <img src="project3.jpg" alt="Project 3">
+            <div class="details">
+                <h3>Project Three</h3>
+                <p>Details of my most recent work...</p>
             </div>
         </div>
     </section>
 
-    <!-- Tech Stack Section -->
-    <section id="tech-stack">
-        <div class="container">
-            <h2>Tech Stack</h2>
-            <p>Die Technologien, mit denen ich arbeite:</p>
-            <div class="tech-list">
-                <div class="tech">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, JavaScript, React</p>
-                </div>
-                <div class="tech">
-                    <i class="fas fa-database"></i>
-                    <h3>Backend</h3>
-                    <p>Node.js, Express, MongoDB</p>
-                </div>
-                <div class="tech">
-                    <i class="fas fa-cloud"></i>
-                    <h3>Cloud</h3>
-                    <p>AWS, Firebase</p>
-                </div>
-                <div class="tech">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Tools</h3>
-                    <p>Git, GitHub, VS Code</p>
-                </div>
-            </div>
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-bar">
+            <span style="width: 85%"></span>
+        </div>
+        <div class="skill-bar">
+            <span style="width: 90%"></span>
+        </div>
+        <div class="skill-bar">
+            <span style="width: 70%"></span>
         </div>
     </section>
 
-    <!-- Projects Description and Coding Challenges -->
-    <section id="projects-description">
-        <div class="container">
-            <h2>Projektbeschreibungen und Herausforderungen</h2>
-            <p>Hier sind einige Herausforderungen, die ich in meinen Projekten gemeistert habe, und wie ich sie gelöst habe:</p>
-            <article>
-                <h3>Wetter-App - Herausforderung</h3>
-                <p>Die größte Herausforderung war die Integration einer zuverlässigen Wetter-API. Durch die Auswahl einer besseren API und das Hinzufügen von Fehlerbehandlungsmechanismen konnte ich das Problem erfolgreich lösen.</p>
-                <p>Gelernte Lektionen: API-Integration, Fehlerbehandlung und benutzerfreundliches Design.</p>
-            </article>
-            <article>
-                <h3>Stromverbrauch-Website - Herausforderung</h3>
-                <p>Die größte Herausforderung war die Visualisierung von Daten für verschiedene Benutzer. Ich habe mich für eine dynamische Diagramm-Darstellung entschieden, um den Nutzern eine einfach zu verstehende Darstellung zu bieten.</p>
-                <p>Gelernte Lektionen: Datenvisualisierung, benutzerzentriertes Design und effiziente Nutzung von Bibliotheken wie Chart.js.</p>
-            </article>
-        </div>
-    </section>
-
-    <!-- Learning Progress Section -->
-    <section id="learning-progress">
-        <div class="container">
-            <h2>Lernfortschritt</h2>
-            <p>Ich lerne kontinuierlich durch kostenlose Online-Kurse, wie z. B. Google und edX Kurse. Ich habe meine Fähigkeiten in den Bereichen Programmierung, Webentwicklung und Design ständig erweitert.</p>
-            <ul>
-                <li>Google Web Development Zertifikat</li>
-                <li>edX Kurse zu Cloud-Computing und Datenbanken</li>
-                <li>Coursera Kurse zu JavaScript und React</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
+        <div class="social-icons">
+            <a href="https://github.com/shine" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shine" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:shine@example.com"><i class="fas fa-envelope"></i></a>
         </div>
+        <p>&copy; 2024 Shine Remollo</p>
     </footer>
-
-    <!-- JavaScript for Dark Mode Toggle -->
-    <script>
-        const darkModeToggle = document.createElement("button");
-        darkModeToggle.innerText = "Dark Mode";
-        document.body.appendChild(darkModeToggle);
-        
-        darkModeToggle.addEventListener("click", () => {
-            document.body.classList.toggle("dark-mode");
-        });
-
-        function scrollToAbout() {
-            document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
-        }
-    </script>
 </body>
 </html>
-
-<style>
-    /* General Styling */
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav {
-        background-color: #333;
-        color: white;
-        padding: 10px 0;
-    }
-
-    nav ul {
-        list-style-type: none;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: inline;
-        margin: 0 15px;
-    }
-
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-    }
-
-    section {
-        padding: 40px 0;
-    }
-
-    .container {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    h2 {
-        color: #333;
-        text-align: center;
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    .project-showcase {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .project {
-        background-color: #fff;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        flex: 1;
-    }
-
-    .project img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 8px;
-    }
-
-    .tech-list {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .tech {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        width: 22%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .tech i {
-        font-size: 40px;
-        margin-bottom: 10px;
-        color: #333;
-    }
-
-    .tech h3 {
-        color: #333;
-    }
-
-    footer {
-        background-color: #333;
-        color: white;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    /* Dark Mode Styling */
-    .dark-mode {
-        background-color: #121212;
-        color: white;
-    }
-
-    .dark-mode nav {
-        background-color: #222;
-    }
-
-    .dark-mode .project-showcase .project {
-        background-color: #333;
-        color: white;
-    }
-
-    .dark-mode .tech {
-        background-color: #333;
-        color: white;
-    }
-
-    /* Button for Dark Mode */
-    button {
-        padding: 10px 20px;
-        background-color: #333;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 18px;
-        margin-top: 20px;
-    }
-
-    button:hover {
-        background-color: #555;
-    }
-</style>
