@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio von Sunshine Remollo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://via.placeholder.com/32" type="image/png"> <!-- Favicon -->
 </head>
 <body>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle">🌙</label>
+    </div>
+
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-text">
@@ -19,15 +26,26 @@
     <!-- About Me Section -->
     <section id="about" class="about">
         <h2>Wer bin ich?</h2>
-        <p>
-            Ich heiße Sunshine Remollo, 19 Jahre alt, aus General Santos City, Philippinen. 
-            Ich bin passioniert für IT und liebe es, Projekte zu entwickeln, die sowohl innovativ 
-            als auch umweltfreundlich sind.
-        </p>
-        <p>
-            Neben meinen technischen Fähigkeiten spiele ich Tennis, was mir Disziplin und Durchhaltevermögen vermittelt hat. 
-            Diese Eigenschaften bringe ich auch in meine Arbeit ein.
-        </p>
+        <div class="about-content">
+            <div class="text">
+                <p>
+                    Ich heiße Sunshine Remollo, 19 Jahre alt, aus General Santos City, Philippinen. 
+                    Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. 
+                    Das hat mich aber nicht abgehalten. Im Gegenteil, es hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.
+                </p>
+                <p>
+                    Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich zum Beispiel eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. 
+                    Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für die Digitalisierung und innovative Lösungen zu vertiefen.
+                </p>
+                <p>
+                    Neben meiner Leidenschaft für Technologie spiele ich auch Tennis. Als Varsity-Spielerin hatte ich das Glück, eine kostenlose Bildung zu bekommen, was mir geholfen hat, sowohl akademisch als auch persönlich zu wachsen. 
+                    Der Sport hat mir Disziplin und Ausdauer beigebracht – Werte, die ich in allen Bereichen meines Lebens, auch in meiner Arbeit, einsetze.
+                </p>
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="Sunshine Remollo">
+            </div>
+        </div>
         <a href="#contact" class="btn">Kontakt aufnehmen</a>
     </section>
 
@@ -60,8 +78,7 @@
         <div class="project-grid">
             <div class="project-card">
                 <h3>Stromverbrauchs-Tracker</h3>
-                <p>Ein Projekt zur Überwachung des Stromverbrauchs in Echtzeit, 
-                ideal für Haushalte und kleine Gemeinden.</p>
+                <p>Ein Projekt zur Überwachung des Stromverbrauchs in Echtzeit, ideal für Haushalte und kleine Gemeinden.</p>
                 <a href="https://github.com/scheinremdy/energy-consumption" target="_blank" class="btn">Code auf GitHub</a>
             </div>
             <div class="project-card">
@@ -85,17 +102,26 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Kontakt</h2>
-        <p>Ich freue mich darauf, mit Ihnen zu arbeiten oder von Ihnen zu hören!</p>
-        <a href="mailto:scheinremdy@gmail.com" class="btn">E-Mail senden</a>
+        <div class="contact-info">
+            <a href="mailto:scheinremdy@gmail.com" class="contact-item">
+                <i class="fas fa-envelope"></i> E-Mail senden
+            </a>
+            <a href="https://github.com/scheinremdy" class="contact-item">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/sunshine-remollo" class="contact-item">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>© 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
-        <div class="social-links">
-            <a href="https://github.com/scheinremdy" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/sunshine-remollo" target="_blank">LinkedIn</a>
-        </div>
     </footer>
+
+    <!-- FontAwesome CDN for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
