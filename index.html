@@ -1,70 +1,100 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Portfolio</title>
+    <title>Sunshine Remollo - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-    <!-- Header Section -->
-    <header class="header">
-        <div class="container">
-            <h1>Willkommen in meinem Portfolio!</h1>
-        </div>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about-me">Über mich</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#tech-stack">Technologie-Stack</a></li>
+                <li><a href="#coding-challenges">Coding Challenges</a></li>
+                <li><a href="#learning-progress">Lernfortschritt</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Über Mich Section -->
-    <section class="about-me">
-        <div class="container">
-            <h2>Über Mich</h2>
-            <p>Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus General Santos City auf den Philippinen. Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. Das hat mich aber nicht abgehalten. Im Gegenteil, es hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.</p>
-            <p>Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich zum Beispiel eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für die Digitalisierung und innovative Lösungen zu vertiefen.</p>
-            <p>Neben meiner Leidenschaft für Technologie spiele ich auch Tennis. Als Varsity-Spielerin hatte ich das Glück, eine kostenlose Bildung zu bekommen, was mir geholfen hat, sowohl akademisch als auch persönlich zu wachsen. Der Sport hat mir Disziplin und Ausdauer beigebracht – Werte, die ich in allen Bereichen meines Lebens, auch in meiner Arbeit, einsetze.</p>
-            <p>Außerdem habe ich praktische Erfahrung als Verwaltungsassistentin in einem Stromversorgungsunternehmen gesammelt. Diese Tätigkeit hat meine organisatorischen Fähigkeiten gestärkt und mir gezeigt, wie wichtig nachhaltige Lösungen in der Energieversorgung sind.</p>
-            <p>Mein Ziel ist es, in einem IT-Unternehmen zu arbeiten, das die Digitalisierung vorantreibt und eine Kultur der Vielfalt sowie des Lernens fördert. Ich möchte dazu beitragen, dass Technologie allen zugänglich wird und Menschen in ihrem Alltag unterstützt.</p>
-            <p>Als Tochter einer Filipina und eines Deutschen habe ich gelernt, wie wertvoll unterschiedliche Perspektiven sind. Diese Vielfalt motiviert mich, in einem internationalen Umfeld zu arbeiten, das Kreativität und Zusammenarbeit schätzt. Ich freue mich darauf, mein Wissen und meine Fähigkeiten in die digitale Zukunft einzubringen und aktiv mitzuwirken. Viel Spaß beim Durchstöbern meines Portfolios!</p>
-        </div>
+    <section id="about-me">
+        <h2>Willkommen in meinem Portfolio!</h2>
+        <p>Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus Kiamba Sarangani Province auf den Philippinen. Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. Das hat mich aber nicht abgehalten. Im Gegenteil, es hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.</p>
+
+        <p>Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich zum Beispiel eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für die Digitalisierung und innovative Lösungen zu vertiefen.</p>
+
+        <p>Neben meiner Leidenschaft für Technologie spiele ich auch Tennis. Als Varsity-Spielerin hatte ich das Glück, eine kostenlose Bildung zu bekommen, was mir geholfen hat, sowohl akademisch als auch persönlich zu wachsen. Der Sport hat mir Disziplin und Ausdauer beigebracht – Werte, die ich in allen Bereichen meines Lebens, auch in meiner Arbeit, einsetze.</p>
+
+        <p>Außerdem habe ich praktische Erfahrung als Verwaltungsassistentin in einem Stromversorgungsunternehmen gesammelt. Diese Tätigkeit hat meine organisatorischen Fähigkeiten gestärkt und mir gezeigt, wie wichtig nachhaltige Lösungen in der Energieversorgung sind.</p>
+
+        <p>Mein Ziel ist es, in einem IT-Unternehmen zu arbeiten, das die Digitalisierung vorantreibt und eine Kultur der Vielfalt sowie des Lernens fördert. Ich möchte dazu beitragen, dass Technologie allen zugänglich wird und Menschen in ihrem Alltag unterstützt.</p>
+
+        <p>Als Tochter einer Filipina und eines Deutschen habe ich gelernt, wie wertvoll unterschiedliche Perspektiven sind. Diese Vielfalt motiviert mich, in einem internationalen Umfeld zu arbeiten, das Kreativität und Zusammenarbeit schätzt. Ich freue mich darauf, mein Wissen und meine Fähigkeiten in die digitale Zukunft einzubringen und aktiv mitzuwirken. Viel Spaß beim Durchstöbern meines Portfolios!</p>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects">
-        <div class="container">
-            <h2>Projekte</h2>
-            <div class="project">
+    <section id="projects">
+        <h2>Projekte</h2>
+        <div class="project-container">
+            <div class="project-card">
                 <h3>Wetter-App</h3>
-                <p>Eine App, die aktuelle Wetterdaten anzeigt und Vorhersagen bietet. Mit dieser App habe ich gelernt, wie man APIs verwendet und Daten verarbeitet.</p>
-                <a href="https://github.com/DeinGitHubName/WetterApp" class="button">GitHub</a>
+                <p>Ein einfaches Tool zur Anzeige von Wetterdaten für verschiedene Städte weltweit.</p>
+                <a href="https://github.com/yourrepo/weather-app" target="_blank">GitHub Repository</a>
             </div>
-            <div class="project">
-                <h3>Stromverbrauch-Überwachung</h3>
-                <p>Eine Website zur Überwachung des Stromverbrauchs, die kleine Gemeinschaften dabei unterstützt, ihren Energieverbrauch zu optimieren.</p>
-                <a href="https://github.com/DeinGitHubName/StromverbrauchApp" class="button">GitHub</a>
+            <div class="project-card">
+                <h3>Stromverbrauchs-Website</h3>
+                <p>Eine interaktive Website zur Verfolgung des Stromverbrauchs in Haushalten.</p>
+                <a href="https://github.com/yourrepo/power-consumption" target="_blank">GitHub Repository</a>
             </div>
-            <div class="project">
+            <div class="project-card">
                 <h3>Umweltfreundlicher Routenplaner</h3>
-                <p>Eine App, die nachhaltige Reiseoptionen wie öffentliche Verkehrsmittel, Radfahren oder zu Fuß empfehlen kann.</p>
-                <a href="https://github.com/DeinGitHubName/Routenplaner" class="button">GitHub</a>
+                <p>Eine App zur Planung umweltfreundlicher Routen unter Verwendung öffentlicher Verkehrsmittel, Fahrrad oder zu Fuß.</p>
+                <a href="https://github.com/yourrepo/eco-route-planner" target="_blank">GitHub Repository</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="container">
-            <h2>Kontakt</h2>
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:deineemail@example.com">deineemail@example.com</a>
+    <section id="tech-stack">
+        <h2>Technologie-Stack</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React.js, Node.js</li>
+            <li>MongoDB, MySQL</li>
+            <li>Python, Django</li>
+            <li>Git, GitHub</li>
+        </ul>
+    </section>
+
+    <section id="coding-challenges">
+        <h2>Coding Challenges</h2>
+        <div class="challenge-container">
+            <div class="challenge-card">
+                <h3>Woche 1: Algorithmus für die Fibonacci-Folge</h3>
+                <p>Ich habe gelernt, wie man rekursive Algorithmen effizient implementiert.</p>
             </div>
-            <div class="contact-item">
-                <i class="fab fa-whatsapp"></i>
-                <a href="https://wa.me/123456789">WhatsApp</a>
+            <div class="challenge-card">
+                <h3>Woche 2: Optimierung eines Sortieralgorithmus</h3>
+                <p>Ich habe meinen Bubble Sort-Algorithmus auf Merge Sort umgestellt, um die Leistung zu verbessern.</p>
             </div>
         </div>
     </section>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <section id="learning-progress">
+        <h2>Lernfortschritt</h2>
+        <p>Ich lerne aktiv über kostenlose Online-Kurse wie Google und edX, um meine Fähigkeiten in verschiedenen Bereichen der Technologie und Softwareentwicklung zu erweitern.</p>
+        <ul>
+            <li>Google IT Support</li>
+            <li>edX Web Development</li>
+            <li>FreeCodeCamp JavaScript</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sunshine Remollo</p>
+    </footer>
 </body>
+
 </html>
