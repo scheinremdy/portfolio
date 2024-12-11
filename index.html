@@ -3,154 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunshine Remollo Portfolio</title>
+    <title>Sunshine Remollo - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: all 0.5s;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
         }
-
+        :root {
+            --background-color: #ffffff;
+            --text-color: #333333;
+            --primary-color: #007BFF;
+        }
+        body.dark-mode {
+            --background-color: #333333;
+            --text-color: #ffffff;
+        }
         header {
-            background-color: #007acc;
+            background-color: var(--primary-color);
             color: #fff;
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 50px 20px;
         }
-
         header h1 {
-            margin: 0;
-            font-size: 2.5rem;
+            font-size: 2.5em;
         }
-
-        header p {
-            font-size: 1.2rem;
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            transition: all 0.3s ease-in-out;
         }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 2rem auto;
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
-
-        section {
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 30px;
         }
-
-        section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: #007acc;
-        }
-
-        section p {
-            margin: 0.5rem 0;
-            line-height: 1.6;
-        }
-
-        .project {
-            margin-bottom: 1.5rem;
-        }
-
-        .project h3 {
-            margin-bottom: 0.5rem;
-            font-size: 1.5rem;
-        }
-
-        .project a {
-            color: #007acc;
-            text-decoration: none;
-        }
-
-        .project a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
+        .btn {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
             text-align: center;
-            padding: 2rem 1rem;
-            background-color: #007acc;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #333;
             color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
         }
-
-        .contact-info {
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        .contact-info a {
+        footer {
+            background-color: var(--primary-color);
             color: #fff;
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Willkommen in meinem Portfolio!</h1>
-        <p>Erkunden Sie meine Projekte und erfahren Sie mehr über mich.</p>
+        <h1>Willkommen auf meinem Portfolio</h1>
+        <p>Ich heiße Sunshine Remollo, 19 Jahre alt, aus den Philippinen</p>
     </header>
 
-    <div class="container">
-        <section>
-            <h2>Über Mich</h2>
-            <p>Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme auf den Philippinen. Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. Das hat mich aber nicht abgehalten. Im Gegenteil, es hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.</p>
-            <p>Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich zum Beispiel eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für die Digitalisierung und innovative Lösungen zu vertiefen.</p>
-            <p>Neben meiner Leidenschaft für Technologie spiele ich auch Tennis. Als Varsity-Spielerin hatte ich das Glück, eine kostenlose Bildung zu bekommen, was mir geholfen hat, sowohl akademisch als auch persönlich zu wachsen. Der Sport hat mir Disziplin und Ausdauer beigebracht – Werte, die ich in allen Bereichen meines Lebens, auch in meiner Arbeit, einsetze.</p>
-            <p>Außerdem habe ich praktische Erfahrung als Verwaltungsassistentin in einem Stromversorgungsunternehmen gesammelt. Diese Tätigkeit hat meine organisatorischen Fähigkeiten gestärkt und mir gezeigt, wie wichtig nachhaltige Lösungen in der Energieversorgung sind.</p>
-            <p>Mein Ziel ist es, in einem IT-Unternehmen zu arbeiten, das die Digitalisierung vorantreibt und eine Kultur der Vielfalt sowie des Lernens fördert. Ich möchte dazu beitragen, dass Technologie allen zugänglich wird und Menschen in ihrem Alltag unterstützt.</p>
-            <p>Als Tochter einer Filipina und eines Deutschen habe ich gelernt, wie wertvoll unterschiedliche Perspektiven sind. Diese Vielfalt motiviert mich, in einem internationalen Umfeld zu arbeiten, das Kreativität und Zusammenarbeit schätzt. Ich freue mich darauf, mein Wissen und meine Fähigkeiten in die digitale Zukunft einzubringen und aktiv mitzuwirken. Viel Spaß beim Durchstöbern meines Portfolios!</p>
-        </section>
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
 
-        <section>
-            <h2>Projekte</h2>
+    <!-- "Über Mich" Section -->
+    <section id="about-me" style="padding: 50px;">
+        <h2>Über mich</h2>
+        <p>Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme auf den Philippinen...</p>
+        <!-- Continue the full "Über mich" content here as you provided above -->
+    </section>
 
-            <div class="project">
-                <h3>Wetter-App</h3>
-                <p>Diese App zeigt Echtzeit-Wetterinformationen basierend auf dem Standort des Benutzers. Herausforderung: Die Integration einer präzisen Wetter-API. Lösung: OpenWeatherMap API wurde verwendet, um genaue und zuverlässige Daten bereitzustellen.</p>
-                <a href="https://github.com/scheinremdy/weather2.2" target="_blank">Live Demo & Code ansehen</a>
-            </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-container">
+        <h2>Meine Projekte</h2>
 
-            <div class="project">
-                <h3>Website zur Überwachung des Stromverbrauchs</h3>
-                <p>Ein Dashboard, das Haushalten hilft, ihren Stromverbrauch zu analysieren. Herausforderung: Benutzerfreundliche Datenvisualisierung. Lösung: Interaktive Diagramme und Echtzeit-Datenaktualisierungen wurden integriert.</p>
-                <a href="https://github.com/scheinremdy/energy-consumption" target="_blank">Live Demo & Code ansehen</a>
-            </div>
+        <!-- Weather App Project -->
+        <div class="project-card">
+            <h3>Wetter App</h3>
+            <p>Dies ist eine Wetter-App, die Echtzeitdaten nutzt, um die aktuelle Wetterlage anzuzeigen.</p>
+            <a href="https://github.com/scheinremdy/weather2.2" class="btn">Projekt ansehen</a>
+        </div>
 
-            <div class="project">
-                <h3>IoT-Basierte Energieüberwachung</h3>
-                <p>Ein IoT-System zur Überwachung von Energieverbrauchsmustern. Herausforderung: Daten synchron in die Cloud hochladen. Lösung: MQTT und Cloud-Dienste zur Sicherstellung der Synchronität wurden implementiert.</p>
-                <a href="https://github.com/scheinremdy/Iot-Based-Energy-Monitor" target="_blank">Live Demo & Code ansehen</a>
-            </div>
+        <!-- Energy Consumption Project -->
+        <div class="project-card">
+            <h3>Stromverbrauchs-Überwachung</h3>
+            <p>Mit dieser Website können Haushalte ihren Stromverbrauch überwachen und analysieren.</p>
+            <a href="https://github.com/scheinremdy/energy-consumption" class="btn">Projekt ansehen</a>
+        </div>
 
-            <div class="project">
-                <h3>Umweltfreundlicher Routenplaner</h3>
-                <p>Eine App zur Empfehlung nachhaltiger Reiseoptionen. Herausforderung: Mehrsprachige Unterstützung und präzise Routenplanung. Lösung: Ein Algorithmus zur Routenoptimierung wurde entwickelt und eine deutsch-englische Benutzeroberfläche integriert.</p>
-                <a href="https://github.com/scheinremdy/eco-route-2" target="_blank">Live Demo & Code ansehen</a>
-            </div>
-        </section>
+        <!-- IoT Energy Monitor -->
+        <div class="project-card">
+            <h3>IoT-basierte Energiemonitoring</h3>
+            <p>Dieses Projekt nutzt IoT-Geräte zur Überwachung des Energieverbrauchs in Echtzeit.</p>
+            <a href="https://github.com/scheinremdy/Iot-Based-Energy-Monitor" class="btn">Projekt ansehen</a>
+        </div>
 
-        <section>
-            <h2>Kontakt</h2>
-            <p class="contact-info">
-                Email: <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a><br>
-                WhatsApp: <a href="https://wa.me/639266884277">+639266884277</a><br>
-                GitHub: <a href="https://github.com/scheinremdy" target="_blank">scheinremdy</a>
-            </p>
-        </section>
-    </div>
+        <!-- Eco Route Planner -->
+        <div class="project-card">
+            <h3>Umweltfreundlicher Routenplaner</h3>
+            <p>Ein Routenplaner, der umweltfreundliche Transportmittel wie Radfahren und öffentliche Verkehrsmittel bevorzugt.</p>
+            <a href="https://github.com/scheinremdy/eco-route-2" class="btn">Projekt ansehen</a>
+        </div>
+    </section>
 
+    <!-- Contact Information -->
+    <section id="contact" style="padding: 50px;">
+        <h2>Kontakt</h2>
+        <p>Sie können mich erreichen über:</p>
+        <ul>
+            <li>Email: <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a></li>
+            <li>WhatsApp: <a href="tel:+639266884277">+639266884277</a></li>
+            <li>GitHub: <a href="https://github.com/scheinremdy" target="_blank">GitHub-Profil</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Sunshine Remollo - Alle Rechte vorbehalten.</p>
+        <p>&copy; 2024 Sunshine Remollo</p>
     </footer>
+
+    <script>
+        // Toggle Dark Mode
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                document.querySelector('.dark-mode-toggle').innerText = '🌞';
+            } else {
+                document.querySelector('.dark-mode-toggle').innerText = '🌙';
+            }
+        }
+    </script>
 </body>
 </html>
