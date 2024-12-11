@@ -4,42 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio von Sunshine Remollo</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sunshine Remollo | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="dark-mode-switch">
+        <label for="dark-mode-switch" class="dark-mode-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </label>
+    </div>
+
     <header>
-        <h1>Willkommen in meinem Portfolio!</h1>
+        <div class="container">
+            <div class="profile">
+                <img src="/mnt/data/FB_IMG_1681946003828.jpg" alt="Sunshine Remollo" class="profile-pic">
+                <h1>Sunshine Remollo</h1>
+                <p class="tagline">"Passionate about Technology, Growth, and Innovation"</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">Über Mich</a></li>
+                    <li><a href="#projects">Projekte</a></li>
+                    <li><a href="#skills">Fähigkeiten</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="über-mich">
-        <h2>Über mich</h2>
-        <p>Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus General Santos City auf den Philippinen. Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. Das hat mich aber nicht abgehalten. Im Gegenteil, es hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.</p>
-        <p>Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich zum Beispiel eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für die Digitalisierung und innovative Lösungen zu vertiefen.</p>
-        <p>Neben meiner Leidenschaft für Technologie spiele ich auch Tennis. Als Varsity-Spielerin hatte ich das Glück, eine kostenlose Bildung zu bekommen, was mir geholfen hat, sowohl akademisch als auch persönlich zu wachsen. Der Sport hat mir Disziplin und Ausdauer beigebracht – Werte, die ich in allen Bereichen meines Lebens, auch in meiner Arbeit, einsetze.</p>
-        <p>Außerdem habe ich praktische Erfahrung als Verwaltungsassistentin in einem Stromversorgungsunternehmen gesammelt. Diese Tätigkeit hat meine organisatorischen Fähigkeiten gestärkt und mir gezeigt, wie wichtig nachhaltige Lösungen in der Energieversorgung sind.</p>
-        <p>Mein Ziel ist es, in einem IT-Unternehmen zu arbeiten, das die Digitalisierung vorantreibt und eine Kultur der Vielfalt sowie des Lernens fördert. Ich möchte dazu beitragen, dass Technologie allen zugänglich wird und Menschen in ihrem Alltag unterstützt.</p>
-        <p>Als Tochter einer Filipina und eines Deutschen habe ich gelernt, wie wertvoll unterschiedliche Perspektiven sind. Diese Vielfalt motiviert mich, in einem internationalen Umfeld zu arbeiten, das Kreativität und Zusammenarbeit schätzt. Ich freue mich darauf, mein Wissen und meine Fähigkeiten in die digitale Zukunft einzubringen und aktiv mitzuwirken. Viel Spaß beim Durchstöbern meines Portfolios!</p>
-        <div class="images">
-            <img src="path_to_uploaded_image1.jpg" alt="Bild von Sunshine Remollo">
-            <img src="path_to_uploaded_image2.jpg" alt="Bild von Sunshine Remollo">
-            <img src="path_to_uploaded_image3.jpg" alt="Bild von Sunshine Remollo">
-        </div>
-    </section>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Über Mich</h2>
+                <div class="about-content">
+                    <img src="/mnt/data/received_861054895141256.jpeg" alt="Über Mich" class="about-photo">
+                    <div class="text">
+                        <p>Willkommen in meinem Portfolio!</p>
+                        <p>Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus General Santos City auf den Philippinen. Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. Das hat mich aber nicht abgehalten. Im Gegenteil, es hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.</p>
+                        <p>Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich zum Beispiel eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für die Digitalisierung und innovative Lösungen zu vertiefen.</p>
+                        <p>Als Tochter einer Filipina und eines Deutschen habe ich gelernt, wie wertvoll unterschiedliche Perspektiven sind. Diese Vielfalt motiviert mich, in einem internationalen Umfeld zu arbeiten, das Kreativität und Zusammenarbeit schätzt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <ul>
-            <li>Email: sunshine.remollo@example.com</li>
-            <li>LinkedIn: <a href="https://linkedin.com/in/sunshine-remollo">linkedin.com/in/sunshine-remollo</a></li>
-            <li>GitHub: <a href="https://github.com/sunshineremollo">github.com/sunshineremollo</a></li>
-            <li>WhatsApp: +639266884277</li>
-        </ul>
-    </section>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projekte</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <img src="/mnt/data/IMG_9245.JPG" alt="Wetter-App">
+                        <h3>Wetter-App</h3>
+                        <p>Eine App, die Wetterdaten in Echtzeit anzeigt.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="https://via.placeholder.com/300" alt="Stromverbrauchs-Website">
+                        <h3>Stromverbrauchs-Website</h3>
+                        <p>Eine Website zur Überwachung und Optimierung des Energieverbrauchs.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="https://via.placeholder.com/300" alt="Umweltfreundlicher Routenplaner">
+                        <h3>Umweltfreundlicher Routenplaner</h3>
+                        <p>Eine App, die nachhaltige Reiseoptionen wie öffentliche Verkehrsmittel oder Radwege vorschlägt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Fähigkeiten</h2>
+                <ul class="skills-list">
+                    <li><i class="fas fa-code"></i> Programmieren</li>
+                    <li><i class="fas fa-database"></i> Datenbankmanagement</li>
+                    <li><i class="fas fa-cloud"></i> Cloud-Technologien</li>
+                    <li><i class="fas fa-language"></i> Deutsch (B2-Niveau)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Kontakt</h2>
+                <p>WhatsApp: +639266884277</p>
+                <p>Email: sunshine.remollo@example.com</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
+        <div class="container">
+            <p>© 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
 </body>
 
