@@ -7,9 +7,9 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background-color: #f4f7fa;
+  background-color: #f4f4f4;
   color: #333;
+  line-height: 1.6;
 }
 
 a {
@@ -17,138 +17,216 @@ a {
   color: inherit;
 }
 
-/* Header */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Section */
 header {
-  background-color: #4CAF50;
-  color: white;
-  text-align: center;
-  padding: 60px 0;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 header h1 {
+  font-size: 2rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+header nav ul li a {
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #4CAF50;
+}
+
+/* Hero Section */
+#hero {
+  background: url('https://via.placeholder.com/1500') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#hero h1 {
   font-size: 3rem;
 }
 
-header p {
-  font-size: 1.5rem;
+#hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+#hero .btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+}
+
+#hero .btn:hover {
+  background-color: #45a049;
 }
 
 /* About Me Section */
 #about-me {
-  padding: 60px 10%;
-  text-align: center;
   background-color: #fff;
+  padding: 60px 0;
+  color: #333;
 }
 
 #about-me h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 #about-me p {
-  font-size: 1.2rem;
-  color: #666;
   line-height: 1.8;
-  margin-bottom: 20px;
+  font-size: 1.1rem;
 }
 
 /* Projects Section */
 #projects {
-  padding: 60px 10%;
-  background-color: #fff;
+  background-color: #f9f9f9;
+  padding: 60px 0;
 }
 
-#projects h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .project-card {
-  background: #f9f9f9;
+  background-color: #fff;
   padding: 20px;
-  margin-bottom: 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
 }
 
 .project-card h3 {
-  color: #4CAF50;
-  margin-bottom: 10px;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .project-card a {
-  color: #4CAF50;
-  margin-right: 15px;
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s;
 }
 
 .project-card a:hover {
-  color: #2e8b57;
+  background-color: #45a049;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
 }
 
 /* Challenges Section */
 #challenges {
-  padding: 60px 10%;
-  background-color: #f9fafb;
-  text-align: center;
+  background-color: #fff;
+  padding: 60px 0;
+  color: #333;
 }
 
-#challenges h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+.challenge-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-#challenges ul {
-  list-style: none;
-  padding: 0;
-}
-
-#challenges li {
-  background-color: white;
-  padding: 15px;
-  margin-bottom: 15px;
+.challenge-item {
+  background-color: #f9f9f9;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.challenge-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.challenge-item p {
+  font-size: 1rem;
+  line-height: 1.8;
 }
 
 /* Contact Section */
 #contact {
-  background-color: #4CAF50;
-  color: white;
-  padding: 40px 10%;
+  background-color: #fff;
+  padding: 60px 0;
   text-align: center;
 }
 
-.contact-icons {
+.contact-info {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 40px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+.contact-item i {
   font-size: 2rem;
+  color: #4CAF50;
 }
 
-.contact-icons a {
-  color: white;
-  transition: color 0.3s ease;
+.contact-item:hover {
+  opacity: 0.7;
 }
 
-.contact-icons a:hover {
-  color: #2e8b57;
-}
-
-/* Footer */
 footer {
   background-color: #333;
-  color: white;
-  text-align: center;
+  color: #fff;
   padding: 20px;
+  text-align: center;
 }
 
 footer a {
-  color: #bbb;
+  color: #4CAF50;
+  font-weight: 600;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: white;
+  color: #45a049;
 }
