@@ -1,20 +1,11 @@
 /* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
   line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
 }
 
 .container {
@@ -23,44 +14,62 @@ a {
   margin: 0 auto;
 }
 
-/* Header Section */
+h1, h2, h3 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 60px 0;
+}
+
 header {
-  background-color: #333;
+  background-color: #34495e;
   color: #fff;
   padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 header nav ul {
   list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  gap: 30px;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 15px;
 }
 
 header nav ul li a {
-  color: white;
-  font-weight: 600;
-  padding: 10px;
-  transition: all 0.3s;
+  color: #fff;
+  font-size: 1.1rem;
 }
 
-header nav ul li a:hover {
-  color: #4CAF50;
+header .dark-mode-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 /* Hero Section */
 #hero {
-  background: url('https://via.placeholder.com/1500') no-repeat center center/cover;
-  color: white;
+  background-color: #ecf0f1;
+  padding: 80px 0;
   text-align: center;
-  padding: 100px 0;
 }
 
 #hero h1 {
@@ -69,94 +78,58 @@ header nav ul li a:hover {
 
 #hero p {
   font-size: 1.2rem;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
-#hero .btn {
+.btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.btn-scroll {
+  background-color: transparent;
+  color: #3498db;
+  border: 2px solid #3498db;
   padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 5px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: background-color 0.3s;
+  border-radius: 30px;
 }
 
-#hero .btn:hover {
-  background-color: #45a049;
+.btn-scroll:hover {
+  background-color: #3498db;
+  color: #fff;
 }
 
-/* About Me Section */
+/* Über Mich Section */
 #about-me {
   background-color: #fff;
-  padding: 80px 0;
-  color: #333;
-  text-align: center;
 }
 
-#about-me h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #333;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-#about-me p {
-  line-height: 1.8;
-  font-size: 1.1rem;
+.about-item {
   margin-bottom: 30px;
 }
 
-#about-me .about-icon {
-  font-size: 3rem;
-  color: #4CAF50;
-  margin-bottom: 20px;
+.about-item h3 {
+  font-size: 1.5rem;
 }
 
-#about-me .about-item {
-  margin-bottom: 40px;
-}
-
-#about-me .about-item h3 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  font-weight: bold;
-  color: #333;
-}
-
-#about-me .about-item p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.8;
-}
-
-#about-me .btn-scroll {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 5px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: background-color 0.3s;
-}
-
-#about-me .btn-scroll:hover {
-  background-color: #45a049;
+.about-item p {
+  font-size: 1rem;
 }
 
 /* Projects Section */
 #projects {
-  background-color: #f9f9f9;
-  padding: 60px 0;
+  background-color: #ecf0f1;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 30px;
 }
 
@@ -164,113 +137,75 @@ header nav ul li a:hover {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 20px;
-}
-
-.project-card p {
-  font-size: 1rem;
-  margin-bottom: 20px;
+  font-size: 1.3rem;
 }
 
 .project-card a {
   display: block;
-  margin: 10px 0;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 5px;
-  font-weight: 600;
-  text-align: center;
-  transition: background-color 0.3s;
-}
-
-.project-card a:hover {
-  background-color: #45a049;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-}
-
-/* Challenges Section */
-#challenges {
-  background-color: #fff;
-  padding: 60px 0;
-  color: #333;
-}
-
-.challenge-list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.challenge-item {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.challenge-item h3 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-
-.challenge-item p {
-  font-size: 1rem;
-  line-height: 1.8;
+  margin-top: 10px;
+  color: #3498db;
 }
 
 /* Contact Section */
 #contact {
   background-color: #fff;
-  padding: 60px 0;
-  text-align: center;
 }
 
 .contact-info {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 1.1rem;
 }
 
 .contact-item i {
-  font-size: 2rem;
-  color: #4CAF50;
+  font-size: 1.5rem;
+  margin-right: 15px;
 }
 
-.contact-item:hover {
-  opacity: 0.7;
+.contact-item p {
+  font-size: 1rem;
 }
 
 footer {
-  background-color: #333;
+  background-color: #34495e;
   color: #fff;
-  padding: 20px;
   text-align: center;
+  padding: 20px 0;
 }
 
-footer a {
-  color: #4CAF50;
-  font-weight: 600;
-  text-decoration: none;
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
 }
 
-footer a:hover {
-  color: #45a049;
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .btn {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #555555;
+}
+
+body.dark-mode a {
+  color: #76a9ff;
+}
+
+body.dark-mode .dark-mode-btn {
+  color: #fff;
 }
