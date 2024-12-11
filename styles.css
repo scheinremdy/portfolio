@@ -8,7 +8,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #f0f2f5;
+  background-color: #f4f7fa;
   color: #333;
 }
 
@@ -22,7 +22,7 @@ header {
   background-color: #4CAF50;
   color: white;
   text-align: center;
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 header h1 {
@@ -37,6 +37,7 @@ header p {
 #about-me {
   padding: 40px 10%;
   text-align: center;
+  background-color: #fff;
 }
 
 #about-me h2 {
@@ -52,8 +53,8 @@ header p {
 
 /* Projects Section */
 #projects {
+  padding: 60px 10%;
   background-color: #fff;
-  padding: 40px 10%;
 }
 
 .project-card {
@@ -77,43 +78,10 @@ header p {
   color: #2e8b57;
 }
 
-/* Skills Section */
-#skills {
-  padding: 40px 10%;
-  background-color: #fff;
-}
-
-#skills h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.skills-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.skill {
-  background-color: #4CAF50;
-  color: white;
-  padding: 15px 25px;
-  border-radius: 50px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.skill:hover {
-  background-color: #2e8b57;
-  transform: scale(1.1);
-}
-
 /* Challenges Section */
 #challenges {
+  padding: 60px 10%;
   background-color: #f9fafb;
-  padding: 40px 10%;
   text-align: center;
 }
 
