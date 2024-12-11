@@ -1,58 +1,104 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunshine Remollo Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script defer src="js/script.js"></script>
+    <title>Portfolio | Sunshine Remollo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <!-- Header -->
+    <header>
         <div class="container">
             <h1>Sunshine Remollo</h1>
-            <p>Passionate about Technology, Growth, and Innovation</p>
-            <nav class="navigation">
+            <p>Fachinformatikerin | Leidenschaft für Digitalisierung und Innovation</p>
+            <nav>
                 <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">Über Mich</a></li>
+                    <li><a href="#projects">Projekte</a></li>
+                    <li><a href="#skills">Fähigkeiten</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
-    <main>
-        <section id="about" class="about-section">
+
+    <!-- Über Mich Section -->
+    <section id="about" class="section">
+        <div class="container">
             <h2>Über Mich</h2>
-            <p>Willkommen in meinem Portfolio!<br>
-               Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus General Santos City auf den Philippinen. Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. Das hat mich aber nicht abgehalten. Im Gegenteil, es hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.
-            </p>
-        </section>
-        
-        <section id="projects" class="projects-section">
-            <h2>Projects</h2>
+            <p>Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme auf den Philippinen. Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. Das hat mich aber nicht abgehalten. Im Gegenteil, es hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.</p>
+            <p>Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich zum Beispiel eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für die Digitalisierung und innovative Lösungen zu vertiefen.</p>
+            <p>Mein Ziel ist es, in einem IT-Unternehmen zu arbeiten, das die Digitalisierung vorantreibt und eine Kultur der Vielfalt sowie des Lernens fördert. Ich möchte dazu beitragen, dass Technologie allen zugänglich wird und Menschen in ihrem Alltag unterstützt.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projekte</h2>
+            <!-- Project 1 -->
             <div class="project">
-                <h3>Weather App</h3>
-                <a href="#">View Live</a>
-                <a href="#">GitHub Repo</a>
+                <h3>Wetter-App</h3>
+                <p>Eine App, die Echtzeit-Wetterdaten abruft und in einer benutzerfreundlichen Oberfläche darstellt.</p>
+                <p><strong>Skills:</strong> Python, Flask, OpenWeather API, Responsive Design</p>
+                <a href="https://github.com/scheinremdy/weather2.2" target="_blank">GitHub Repository</a>
             </div>
-        </section>
-        
-        <section id="contact" class="contact-section">
-            <h2>Contact</h2>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Energy Consumption Tracker</h3>
+                <p>Eine Website, die den Stromverbrauch visualisiert, um Nutzern nachhaltige Energiesparlösungen anzubieten.</p>
+                <p><strong>Skills:</strong> Python, MySQL, Data Visualization, Webentwicklung</p>
+                <a href="https://github.com/scheinremdy/energy-consumption" target="_blank">GitHub Repository</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <h3>IoT-Based Energy Monitor</h3>
+                <p>Ein innovatives IoT-System zur Echtzeit-Überwachung des Stromverbrauchs und Energieanalyse.</p>
+                <p><strong>Skills:</strong> IoT Development, Python, Data Analytics</p>
+                <a href="https://github.com/scheinremdy/Iot-Based-Energy-Monitor" target="_blank">GitHub Repository</a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project">
+                <h3>Eco-Friendly Route Planner</h3>
+                <p>Ein Routenplaner, der umweltfreundliche Reiseoptionen wie öffentliche Verkehrsmittel, Fahrrad oder zu Fuß vorschlägt.</p>
+                <p><strong>Skills:</strong> JavaScript, Google Maps API, React.js</p>
+                <a href="https://github.com/scheinremdy/eco-route-2" target="_blank">GitHub Repository</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Fähigkeiten</h2>
             <ul>
-                <li>WhatsApp: +639266884277</li>
-                <li>Email: remolloschein@gmail.com</li>
-                <li><a href="https://github.com/username" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                <li><strong>Programmiersprachen:</strong> Python, JavaScript, SQL</li>
+                <li><strong>Frameworks & Tools:</strong> Flask, React.js, Google Maps API</li>
+                <li><strong>Soft Skills:</strong> Problemlösungsfähigkeit, Teamarbeit, Analytisches Denken</li>
             </ul>
-        </section>
-    </main>
-    
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Email: <a href="mailto:sunshine.remollo@example.com">sunshine.remollo@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/scheinremdy" target="_blank">LinkedIn Profil</a></p>
+            <p>GitHub: <a href="https://github.com/scheinremdy" target="_blank">GitHub</a></p>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Sunshine Remollo. All rights reserved.</p>
+        <div class="container">
+            <p>© 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
 </body>
 </html>
