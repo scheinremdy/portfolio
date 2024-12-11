@@ -1,154 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunshine Remollo | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f9fc;
-            color: #333;
-        }
-        header {
-            background-color: #4caf50;
-            color: #fff;
-            padding: 1rem 2rem;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        nav {
-            margin-top: 0.5rem;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: 600;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        section {
-            margin-bottom: 2rem;
-        }
-        section h2 {
-            font-size: 1.8rem;
-            color: #4caf50;
-            margin-bottom: 1rem;
-        }
-        .project {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        .project-card {
-            background: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-        .project-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .project-card h3 {
-            margin: 1rem;
-            font-size: 1.4rem;
-        }
-        .project-card p {
-            margin: 0 1rem 1rem;
-            font-size: 0.95rem;
-        }
-        .project-card a {
-            display: block;
-            text-align: center;
-            padding: 0.75rem;
-            background-color: #4caf50;
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 0 0 8px 8px;
-            transition: background-color 0.3s;
-        }
-        .project-card a:hover {
-            background-color: #45a049;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #333;
-            color: #fff;
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sunshine Remollo - IT Fachinformatikerin Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Sunshine Remollo</h1>
-        <nav>
-            <a href="#about">Über Mich</a>
-            <a href="#projects">Projekte</a>
-            <a href="#contact">Kontakt</a>
-        </nav>
-    </header>
 
+  <!-- Header -->
+  <header id="header">
     <div class="container">
-        <section id="about">
-            <h2>Über Mich</h2>
-            <p>
-                Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus General Santos City, Philippinen. Ich liebe Technologie und habe Projekte entwickelt, um praktische Probleme zu lösen, wie eine Wetter-App und eine umweltfreundliche Routenplaner-App.
-            </p>
-        </section>
-
-        <section id="projects">
-            <h2>Projekte</h2>
-            <div class="project">
-                <div class="project-card">
-                    <img src="project1.jpg" alt="Weather App">
-                    <h3>Wetter-App</h3>
-                    <p>Eine App zur Wettervorhersage mit Echtzeit-Updates und modernem Design.</p>
-                    <a href="#">Live Demo</a>
-                </div>
-                <div class="project-card">
-                    <img src="project2.jpg" alt="Energy Tracker">
-                    <h3>Energy Consumption Tracker</h3>
-                    <p>Ein Tool zur Überwachung des Stromverbrauchs für kleine Gemeinschaften.</p>
-                    <a href="#">Live Demo</a>
-                </div>
-                <div class="project-card">
-                    <img src="project3.jpg" alt="Eco-Route Planner">
-                    <h3>Umweltfreundlicher Routenplaner</h3>
-                    <p>Eine App zur Empfehlung nachhaltiger Reisemöglichkeiten.</p>
-                    <a href="#">Live Demo</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Kontakt</h2>
-            <p>Email: <a href="mailto:sunshine.remollo@example.com">sunshine.remollo@example.com</a></p>
-        </section>
+      <h1>Sunshine Remollo - IT Fachinformatikerin</h1>
+      <p>Innovating for a Digital Future</p>
     </div>
+  </header>
 
-    <footer>
-        &copy; 2024 Sunshine Remollo. Alle Rechte vorbehalten.
-    </footer>
+  <!-- About Me Section -->
+  <section id="about-me">
+    <div class="container">
+      <h2>Über Mich</h2>
+      <p>Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus General Santos City auf den Philippinen...</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Meine Projekte</h2>
+      <div class="project-card">
+        <h3>Electric Grid Load Projector</h3>
+        <p>Visualizes the energy consumption in an electrical grid...</p>
+        <a href="https://scheinremdy.github.io/project112/" target="_blank">Live Website</a>
+        <a href="https://github.com/scheinremdy/project112" target="_blank">GitHub Repository</a>
+      </div>
+      <!-- Add other projects here -->
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Meine Fähigkeiten</h2>
+      <div class="skills-container">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <!-- Add more skills -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenges Section -->
+  <section id="challenges">
+    <div class="container">
+      <h2>Herausforderungen und Lösungen</h2>
+      <ul>
+        <li>Challenge 1</li>
+        <li>Challenge 2</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Kontakt</h2>
+      <div class="contact-icons">
+        <a href="https://wa.me/639266884277" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:remolloschein@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/scheinremdy" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Sunshine Remollo | <a href="https://github.com/scheinremdy" target="_blank">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
