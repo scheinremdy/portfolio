@@ -3,161 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunshine Remollo - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            transition: all 0.5s;
-            margin: 0;
-        }
-        :root {
-            --background-color: #ffffff;
-            --text-color: #333333;
-            --primary-color: #007BFF;
-        }
-        body.dark-mode {
-            --background-color: #333333;
-            --text-color: #ffffff;
-        }
-        header {
-            background-color: var(--primary-color);
-            color: #fff;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        header h1 {
-            font-size: 2.5em;
-        }
-        .project-card {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px;
-            transition: all 0.3s ease-in-out;
-        }
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        .projects-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 30px;
-        }
-        .btn {
-            background-color: var(--primary-color);
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-align: center;
-            margin-top: 10px;
-        }
-        .btn:hover {
-            background-color: #0056b3;
-        }
-        .dark-mode-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 50%;
-        }
-        footer {
-            background-color: var(--primary-color);
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+    <title>Sunshine Remollo Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Willkommen auf meinem Portfolio</h1>
-        <p>Ich heiße Sunshine Remollo, 19 Jahre alt, aus den Philippinen</p>
+        <nav class="navbar">
+            <h1 class="logo">Sunshine Remollo</h1>
+            <ul class="nav-links">
+                <li><a href="#about">Über Mich</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li>
+                    <button id="darkModeToggle">🌙</button>
+                </li>
+                <li>
+                    <select id="languageSelect">
+                        <option value="de">Deutsch</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Dark Mode Toggle Button -->
-    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+    <main>
+        <section id="about" class="section">
+            <h2>Über Mich</h2>
+            <p>Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. Das hat mich aber nicht abgehalten. Im Gegenteil, es hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.</p>
+            <p>Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich zum Beispiel eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für die Digitalisierung und innovative Lösungen zu vertiefen.</p>
+            <p>Neben meiner Leidenschaft für Technologie spiele ich auch Tennis. Als Varsity-Spielerin hatte ich das Glück, eine kostenlose Bildung zu bekommen, was mir geholfen hat, sowohl akademisch als auch persönlich zu wachsen. Der Sport hat mir Disziplin und Ausdauer beigebracht – Werte, die ich in allen Bereichen meines Lebens, auch in meiner Arbeit, einsetze.</p>
+            <p>Außerdem habe ich praktische Erfahrung als Verwaltungsassistentin in einem Stromversorgungsunternehmen gesammelt. Diese Tätigkeit hat meine organisatorischen Fähigkeiten gestärkt und mir gezeigt, wie wichtig nachhaltige Lösungen in der Energieversorgung sind.</p>
+            <p>Mein Ziel ist es, in einem IT-Unternehmen zu arbeiten, das die Digitalisierung vorantreibt und eine Kultur der Vielfalt sowie des Lernens fördert. Ich möchte dazu beitragen, dass Technologie allen zugänglich wird und Menschen in ihrem Alltag unterstützt.</p>
+        </section>
 
-    <!-- "Über Mich" Section -->
-    <section id="about-me" style="padding: 50px;">
-        <h2>Über mich</h2>
-        <p>Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme auf den Philippinen...</p>
-        <!-- Continue the full "Über mich" content here as you provided above -->
-    </section>
+        <section id="projects" class="section">
+            <h2>Projekte</h2>
+            <div class="project-card">
+                <h3>Wetter-App</h3>
+                <p>Eine App zur Wettervorhersage mit aktuellen und genauen Daten.</p>
+                <a href="https://github.com/username/weather-app" target="_blank"><i class="fab fa-github"></i> Code anzeigen</a>
+            </div>
+            <div class="project-card">
+                <h3>Stromverbrauchs-Tracker</h3>
+                <p>Eine Website zur Überwachung und Optimierung des Stromverbrauchs.</p>
+                <a href="https://github.com/username/electric-consumption" target="_blank"><i class="fab fa-github"></i> Code anzeigen</a>
+            </div>
+            <div class="project-card">
+                <h3>Umweltfreundliche Routenplaner-App</h3>
+                <p>Eine App für nachhaltige Reiserouten, die umweltfreundliche Optionen priorisiert.</p>
+                <a href="https://github.com/username/eco-friendly-routes" target="_blank"><i class="fab fa-github"></i> Code anzeigen</a>
+            </div>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-container">
-        <h2>Meine Projekte</h2>
+        <section id="contact" class="section">
+            <h2>Kontakt</h2>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a></p>
+            <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/639266884277">+63 926 688 4277</a></p>
+            <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/username">github.com/username</a></p>
+        </section>
+    </main>
 
-        <!-- Weather App Project -->
-        <div class="project-card">
-            <h3>Wetter App</h3>
-            <p>Dies ist eine Wetter-App, die Echtzeitdaten nutzt, um die aktuelle Wetterlage anzuzeigen.</p>
-            <a href="https://github.com/scheinremdy/weather2.2" class="btn">Projekt ansehen</a>
-        </div>
-
-        <!-- Energy Consumption Project -->
-        <div class="project-card">
-            <h3>Stromverbrauchs-Überwachung</h3>
-            <p>Mit dieser Website können Haushalte ihren Stromverbrauch überwachen und analysieren.</p>
-            <a href="https://github.com/scheinremdy/energy-consumption" class="btn">Projekt ansehen</a>
-        </div>
-
-        <!-- IoT Energy Monitor -->
-        <div class="project-card">
-            <h3>IoT-basierte Energiemonitoring</h3>
-            <p>Dieses Projekt nutzt IoT-Geräte zur Überwachung des Energieverbrauchs in Echtzeit.</p>
-            <a href="https://github.com/scheinremdy/Iot-Based-Energy-Monitor" class="btn">Projekt ansehen</a>
-        </div>
-
-        <!-- Eco Route Planner -->
-        <div class="project-card">
-            <h3>Umweltfreundlicher Routenplaner</h3>
-            <p>Ein Routenplaner, der umweltfreundliche Transportmittel wie Radfahren und öffentliche Verkehrsmittel bevorzugt.</p>
-            <a href="https://github.com/scheinremdy/eco-route-2" class="btn">Projekt ansehen</a>
-        </div>
-    </section>
-
-    <!-- Contact Information -->
-    <section id="contact" style="padding: 50px;">
-        <h2>Kontakt</h2>
-        <p>Sie können mich erreichen über:</p>
-        <ul>
-            <li>Email: <a href="mailto:remolloschein@gmail.com">remolloschein@gmail.com</a></li>
-            <li>WhatsApp: <a href="tel:+639266884277">+639266884277</a></li>
-            <li>GitHub: <a href="https://github.com/scheinremdy" target="_blank">GitHub-Profil</a></li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Sunshine Remollo</p>
     </footer>
 
     <script>
-        // Toggle Dark Mode
-        function toggleDarkMode() {
-            const body = document.body;
+        const toggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        toggle.addEventListener('click', () => {
             body.classList.toggle('dark-mode');
-            if (body.classList.contains('dark-mode')) {
-                document.querySelector('.dark-mode-toggle').innerText = '🌞';
-            } else {
-                document.querySelector('.dark-mode-toggle').innerText = '🌙';
-            }
-        }
+        });
+
+        const languageSelect = document.getElementById('languageSelect');
+        languageSelect.addEventListener('change', (event) => {
+            const language = event.target.value;
+            // Logic for language switch can be added here
+            alert(`Sprache gewechselt zu: ${language}`);
+        });
     </script>
 </body>
 </html>
