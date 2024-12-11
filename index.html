@@ -1,191 +1,46 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shine's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-light: #f4f4f4;
-      --bg-dark: #1e1e2f;
-      --text-light: #fefefe;
-      --text-dark: #333;
-      --primary-color: #ffa726;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background-color: var(--bg-light);
-      color: var(--text-dark);
-      transition: all 0.3s ease;
-    }
-
-    .dark-mode {
-      background-color: var(--bg-dark);
-      color: var(--text-light);
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: var(--primary-color);
-      color: white;
-    }
-
-    header h1 {
-      margin: 0;
-    }
-
-    .dark-mode-toggle {
-      cursor: pointer;
-      background: none;
-      border: none;
-      color: white;
-      font-size: 18px;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    .section {
-      margin-bottom: 40px;
-    }
-
-    .section h2 {
-      margin-bottom: 20px;
-      border-bottom: 2px solid var(--primary-color);
-      display: inline-block;
-    }
-
-    .projects {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .project {
-      flex: 1 1 calc(33.333% - 20px);
-      background: var(--primary-color);
-      color: white;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-    }
-
-    .project:hover {
-      transform: scale(1.05);
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .skill {
-      padding: 10px 15px;
-      background-color: var(--primary-color);
-      color: white;
-      border-radius: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: var(--primary-color);
-      color: white;
-    }
-
-    .hobbies {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .hobby {
-      text-align: center;
-      flex: 1 1 calc(25% - 20px);
-      margin-bottom: 20px;
-    }
-
-    .hobby img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 50%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio von Sunshine Remollo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>Shine's Portfolio</h1>
-    <button class="dark-mode-toggle">🌙 Dark Mode</button>
-  </header>
-  <main>
-    <section class="section" id="about">
-      <h2>Über mich</h2>
-      <p>Hallo! Ich heiße Shine und bin eine angehende Fachinformatikerin. Neben meiner Leidenschaft für IT spiele ich Tennis, Schach und entdecke gern neue Hobbys. Willkommen auf meiner Seite!</p>
+    <header>
+        <h1>Willkommen in meinem Portfolio!</h1>
+    </header>
+
+    <section id="über-mich">
+        <h2>Über mich</h2>
+        <p>Ich heiße Sunshine Remollo, bin 19 Jahre alt und komme aus General Santos City auf den Philippinen. Schon als Kind hatte ich großes Interesse an der digitalen Welt, aber der Zugang zu Computern war auf den Philippinen nicht für jeden selbstverständlich. Das hat mich aber nicht abgehalten. Im Gegenteil, es hat mich motiviert, mehr zu lernen und meine Computerkenntnisse zu verbessern.</p>
+        <p>Ich habe viel durch kostenlose Online-Kurse und selbstständiges Lernen erreicht. So habe ich zum Beispiel eine Wetter-App, eine Website zur Überwachung des Stromverbrauchs und eine umweltfreundliche Routenplaner-App entwickelt. Diese Projekte haben mir nicht nur geholfen, technische Fähigkeiten in der Programmierung und Webentwicklung zu erlangen, sondern auch meine Leidenschaft für die Digitalisierung und innovative Lösungen zu vertiefen.</p>
+        <p>Neben meiner Leidenschaft für Technologie spiele ich auch Tennis. Als Varsity-Spielerin hatte ich das Glück, eine kostenlose Bildung zu bekommen, was mir geholfen hat, sowohl akademisch als auch persönlich zu wachsen. Der Sport hat mir Disziplin und Ausdauer beigebracht – Werte, die ich in allen Bereichen meines Lebens, auch in meiner Arbeit, einsetze.</p>
+        <p>Außerdem habe ich praktische Erfahrung als Verwaltungsassistentin in einem Stromversorgungsunternehmen gesammelt. Diese Tätigkeit hat meine organisatorischen Fähigkeiten gestärkt und mir gezeigt, wie wichtig nachhaltige Lösungen in der Energieversorgung sind.</p>
+        <p>Mein Ziel ist es, in einem IT-Unternehmen zu arbeiten, das die Digitalisierung vorantreibt und eine Kultur der Vielfalt sowie des Lernens fördert. Ich möchte dazu beitragen, dass Technologie allen zugänglich wird und Menschen in ihrem Alltag unterstützt.</p>
+        <p>Als Tochter einer Filipina und eines Deutschen habe ich gelernt, wie wertvoll unterschiedliche Perspektiven sind. Diese Vielfalt motiviert mich, in einem internationalen Umfeld zu arbeiten, das Kreativität und Zusammenarbeit schätzt. Ich freue mich darauf, mein Wissen und meine Fähigkeiten in die digitale Zukunft einzubringen und aktiv mitzuwirken. Viel Spaß beim Durchstöbern meines Portfolios!</p>
+        <div class="images">
+            <img src="path_to_uploaded_image1.jpg" alt="Bild von Sunshine Remollo">
+            <img src="path_to_uploaded_image2.jpg" alt="Bild von Sunshine Remollo">
+            <img src="path_to_uploaded_image3.jpg" alt="Bild von Sunshine Remollo">
+        </div>
     </section>
 
-    <section class="section" id="projects">
-      <h2>Projekte</h2>
-      <div class="projects">
-        <div class="project">
-          <h3>Weather App</h3>
-          <p>Eine App, die aktuelle Wetterdaten liefert.</p>
-        </div>
-        <div class="project">
-          <h3>Electric Consumer Tracker</h3>
-          <p>Ein Tool zur Überwachung des Energieverbrauchs in kleinen Gemeinden.</p>
-        </div>
-        <div class="project">
-          <h3>Eco-Friendly Travel Routes</h3>
-          <p>Eine Karte, die nachhaltige Reisemöglichkeiten vorschlägt.</p>
-        </div>
-      </div>
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <ul>
+            <li>Email: sunshine.remollo@example.com</li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/sunshine-remollo">linkedin.com/in/sunshine-remollo</a></li>
+            <li>GitHub: <a href="https://github.com/sunshineremollo">github.com/sunshineremollo</a></li>
+            <li>WhatsApp: +639266884277</li>
+        </ul>
     </section>
 
-    <section class="section" id="skills">
-      <h2>Fähigkeiten</h2>
-      <div class="skills">
-        <div class="skill">Python</div>
-        <div class="skill">HTML & CSS</div>
-        <div class="skill">Deutsch B2</div>
-      </div>
-    </section>
-
-    <section class="section" id="hobbies">
-      <h2>Hobbys</h2>
-      <div class="hobbies">
-        <div class="hobby">
-          <img src="tennis.jpg" alt="Tennis">
-          <p>Tennis</p>
-        </div>
-        <div class="hobby">
-          <img src="chess.jpg" alt="Schach">
-          <p>Schach</p>
-        </div>
-        <div class="hobby">
-          <img src="video_games.jpg" alt="Videospiele">
-          <p>Videospiele</p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    &copy; 2024 Shine's Portfolio
-  </footer>
-
-  <script>
-    const toggle = document.querySelector('.dark-mode-toggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-  </script>
+    <footer>
+        <p>© 2024 Sunshine Remollo. Alle Rechte vorbehalten.</p>
+    </footer>
 </body>
+
 </html>
